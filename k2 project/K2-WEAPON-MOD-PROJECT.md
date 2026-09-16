@@ -15,18 +15,23 @@ GAMGO 의 K2 계열 모델 3종으로 SPT 4.1.5 용 무기 모드를 만든다. 
 
 ## 1. 모델 — 확인 완료
 
-### 1.1 라이선스 — ⚠️ 모델마다 다름 (2026-09-16 정정)
+### 1.1 라이선스 — ⚠️ 셋 다 다름, K2 는 CC 도 아니다 (2026-09-16 재정정)
 
-처음에 "CC-BY-4.0" 으로 통일해서 적었던 것은 **틀렸다.** 각 모델 동봉 `license.txt`
-를 직접 대조한 결과:
+처음에 "CC-BY-4.0" 으로 통일해서 적었던 것은 **틀렸다.** 세 모델 동봉 `license.txt`
+를 전부 대조한 결과 — CC 두 종류 + Sketchfab 고유 라이선스 하나, 전부 다르다:
 
 | 모델 | 라이선스 | 요구사항 |
 |---|---|---|
-| K2C3 | **CC-BY-4.0** | 저작자 표시만 하면 상업적 이용까지 허용 |
+| **K2** | **Sketchfab Standard** (CC 아님) | 저작자 표시 불필요, 상업적 이용·파생물 제작 허용<br>단, **원본을 독립 파일로 재배포·재판매 금지** |
+| K2C3 | CC-BY-4.0 | 저작자 표시만 하면 상업적 이용까지 허용 |
 | **K2C4** | **CC-BY-SA-4.0** | 저작자 표시 **+ 파생물도 동일 라이선스로 공개(ShareAlike)** |
-| K2 | ⬜ 미확인 | `license.txt` 대조 필요 |
 
 ```
+# K2
+license type: SKETCHFAB Standard  (https://sketchfab.com/licenses)
+requirements: Under basic restrictions, use worldwide, on all types of media,
+              commercially or not, and in all types of derivative works
+
 # K2C3
 license type: CC-BY-4.0  (http://creativecommons.org/licenses/by/4.0/)
 requirements: Author must be credited. Commercial use is allowed.
@@ -36,6 +41,22 @@ license type: CC-BY-SA-4.0  (http://creativecommons.org/licenses/by-sa/4.0/)
 requirements: Author must be credited. Modified versions must have the same
               license. Commercial use is allowed.
 ```
+
+**K2 (Standard) 는 별도 위험이 있다.** 검색 결과로 재구성한 Standard 원문
+(직접 열지 못함 — 사내 프록시가 sketchfab.com 차단):
+
+> *"You may not use the 3D asset in a way that allows others to use or access
+> the 3D asset as a stand-alone file (for instance, no sub-license or sale by
+> you to others is allowed)."* — [Sketchfab License Agreement](https://sketchfab.com/licenses)
+
+컴파일된 Unity AssetBundle 에 녹여 넣는 건 이 조항에 안 걸린다(업계 표준 해석 — 게임에
+구워 넣는 게 Standard 라이선스가 겨냥하는 정상 용도). **문제는 이 저장소가 public 이고
+Release 에 K2 원본 FBX/glTF 를 독립 파일 그대로 올려서 누구나 받게 해뒀다는 것** —
+이건 "stand-alone file 로 접근 가능하게 하는 것" 에 해당할 수 있다. K2C3/K2C4 는
+CC-BY 계열이라 원본 공유 자체가 허용되므로 문제없음 — **K2 파일만 걸린다.**
+
+→ 조치 필요: 레포 비공개 전환 / Release 에서 K2 원본만 제외 / 현행 유지(댓글 근거로)
+중 택1. 6절 체크리스트 참조.
 
 **왜 이게 중요한가 — SA 조항은 이 프로젝트의 계획(부품 갈아끼우기)상 반드시 걸린다.**
 CC-BY-SA 의 "각색물(adapted material)" 정의는 번역·변형·배열·수정을 전부 포함한다.
@@ -65,8 +86,14 @@ by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-SA-4.0
 (http://creativecommons.org/licenses/by-sa/4.0/)
 ```
 
-+ K2 의 문구는 `license.txt` 확인 후 추가. 결과물 자체에도 **CC-BY-SA-4.0 표시를
-같이 건다** (K2C4 의 SA 조항이 결과물 전체로 전파되므로).
+```
+This work is based on "Daewoo K2" (https://sketchfab.com/3d-models/daewoo-k2-258d30e1f3e04c13a60abd916425b0c2)
+by GAMGO (https://sketchfab.com/gamgo_studio) — Sketchfab Standard License
+(https://sketchfab.com/licenses)
+```
+
+결과물 자체에도 **CC-BY-SA-4.0 표시를 같이 건다** (K2C4 의 SA 조항이 결과물 전체로
+전파되므로).
 
 제작자 댓글 (전사, 스크린샷 확보됨 2026-09-16) — Sketchfab 모델 페이지, 3년 전.
 "게임 모드 제작에 써도 되는지"를 직접 물은 질문에 대한 답변이라 용도가 정확히 맞는다:
@@ -79,13 +106,11 @@ by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-SA-4.0
 다만 이 댓글이 SA 조항 자체를 면제해주는 공식 문서는 아니므로, **`license.txt` 를
 1차 근거로 삼는다.**
 
-### 1.1.1 loose part 구조 — 사용자 확인 (2026-09-16)
+### 1.1.1 loose part 구조 — 3종 전부 데이터 확인 완료 (2026-09-16)
 
-K2C3 는 이 문서 1.3절처럼 데이터로 직접 분석했다. **K2 · K2C4 는 사용자가 glTF 를
-직접 열어 눈으로 확인**했고, 셋 다 "가능(부품 갈아끼우기 구조로 갈 수 있다)" 는
-결론을 받았다. K2 · K2C4 의 정확한 삼각형 수 · loose part 개수 · 부품 위치 지도는
-아직 데이터 기반으로 뽑지 않았다 — glTF 파일이 주어지면 1.3~1.4절과 같은 방식으로
-채울 것.
+처음엔 K2C3 만 데이터로 분석했고 K2·K2C4 는 사용자 육안 확인뿐이었으나, 이후 Release
+`glTF` 태그로 세 모델의 glTF 가 전부 확보돼 **3종 전부 데이터 기반으로 재확인했다.**
+결과는 1.3~1.4절에 통합.
 
 ### 1.2 확보한 변형 3종
 
@@ -100,29 +125,32 @@ K2C3 는 이 문서 1.3절처럼 데이터로 직접 분석했다. **K2 · K2C4 
 
 포맷: **FBX / glTF / GLB / USDZ**. → Unity 작업엔 **FBX** 를 쓸 것.
 
-### 1.3 glTF 분석 결과 (K2C3 기준, 실측)
+### 1.3 glTF 분석 결과 — 3종 전체 (실측 완료 2026-09-16)
 
-```
-generator : Sketchfab-13.74.0 / glTF 2.0   (원본 FBX 명: K2C3_AR.FBX)
-nodes 9 / meshes 2 / skins 없음 / animations 없음 / materials 2 / textures 8
-```
+| | K2 (원본) | K2C3 | K2C4 (단축) |
+|---|---|---|---|
+| generator | Sketchfab-16.28.0 | Sketchfab-13.74.0 | Sketchfab-16.28.0 |
+| 삼각형 | 9,646 | 12,749 | 12,636 |
+| 메시 개수 | 3 | 2 | 2 |
+| **loose part** | **48** | **212** | **184** |
+| 본(리깅) | 없음 | 없음 | 없음 |
+| 애니메이션 | 없음 | 없음 | 없음 |
+| 정점 속성 | POSITION·NORMAL·TANGENT·TEXCOORD_0 | 〃 | 〃 |
+| 텍스처 | 2048² PBR | 2048² PBR ×2세트 | 2048² PBR |
+| 노드 이름 | ⚠️ **손상됨** (아래) | 정상 | 정상 (`upside`/`downside`) |
 
-| 항목 | 값 | 평가 |
-|---|---|---|
-| 삼각형 | **12,749** (10,039 + 3,801 정점) | 모드 무기로 충분. 바닐라보단 단순 |
-| 메시 | 2개 — `Object001`(8,657 tri), `Body`(4,092 tri) | 기능별이 아니라 **앞/뒤 + 머티리얼** 분할 |
-| **loose part** | **212개** (194 + 18) | ⭐ **핵심. 부품 셸이 살아있음** |
-| 본(리깅) | **없음** | 새로 만들어야 함 |
-| 애니메이션 | 없음 | EFT 는 자체 애니를 쓰므로 무관 |
-| 정점 속성 | `POSITION` `NORMAL` `TANGENT` `TEXCOORD_0` | **노멀맵 재굽기 불필요** |
-| 텍스처 | 2048² PBR ×2 세트 (baseColor / metallicRoughness / normal / emissive) | 그대로 활용 가능 |
+**세 모델 다 loose part 가 살아있다.** `P` → `By Loose Parts` 로 즉시 분리된다. K2 가
+48개로 K2C3(212)·K2C4(184) 보다 적은 건 문제가 아니라 실물 반영이다 — K2 의 핸드가드는
+레일 이빨 없는 통짜 플라스틱이라 애초에 나눠질 이유가 적다.
 
-**212 loose part 가 이 프로젝트의 성패를 갈랐다.** 통짜 메시였다면 3D 툴로 잘라내고
-구멍 막고 UV 수리까지 해야 했는데, 셸이 분리돼 있으므로 블렌더에서
-`P` → `By Loose Parts` **한 번으로 212개 오브젝트가 된다.** 남는 일은 자르기가 아니라
-**고르고 묶기**.
+**K2 의 노드 이름은 복구 불가능하다.** 원래 있었을 이름(한글로 추정)이 유니코드
+대체문자(U+FFFD, 바이트로는 `\xef\xbf\xbd` 반복)로 바뀌어 있다 — 이건 원본 바이트
+자체가 사라졌다는 뜻이라 되돌릴 방법이 없다. 부품 식별은 이름이 아니라 아래처럼
+**월드 좌표 위치**로 했으므로 분석 결과에는 영향 없다.
 
 ### 1.4 부품 위치 지도 (0% = 총구, 100% = 개머리판 끝, 월드 좌표 실측)
+
+**K2C3** (최대 조각 2,048 tri = 핸드가드):
 
 | 구간 | 삼각형 | 추정 정체 |
 |---|---|---|
@@ -136,14 +164,47 @@ nodes 9 / meshes 2 / skins 없음 / animations 없음 / materials 2 / textures 8
 | 72 ~ 93% | 422 | 버퍼튜브 |
 | 85 ~ 100% | 560 / 114 | **개머리판** |
 
-**핸드가드 · 총열 · 총몸 · 개머리판이 전부 독립 셸** → 부품 교체(모듈) 구조 가능.
+**K2 (원본)** — 레일 없는 플라스틱 핸드가드, 고정 개머리판:
+
+| 구간 | 삼각형 | 추정 정체 |
+|---|---|---|
+| 0 ~ 50% | 676 | **총열** |
+| 16 ~ 21% | 522 | 가늠쇠 · 가스블록 |
+| 24 ~ 51% | 942 / 656 / 264 | **플라스틱 핸드가드** (K2C3 의 레일 대응 부위, 이빨이 없어 조각 수 적음) |
+| 50 ~ 74% | 997 / 1,004 | **총몸(리시버)** |
+| 52 ~ 65% | 144 / 135 / 90 | **장전손잡이 · 노리쇠 후보** |
+| 65 ~ 75% | 446 | 권총손잡이 |
+| **73 ~ 100%** | **1,062** | **측면 접이식 개머리판** — 한 덩어리(K2C3/C4 는 두 조각) |
+
+**K2C4 (단축)** — 짧은 총열, 더 큰 핸드가드:
+
+| 구간 | 삼각형 | 추정 정체 |
+|---|---|---|
+| **0 ~ 40%** | 676 | **단축 총열** (K2C3 의 0~50% 보다 짧음 → 실물 310mm 반영) |
+| 13 ~ 18% | 486 / 156 | 가늠쇠 · 가스블록 |
+| **25 ~ 65%** | **2,596** | **쿼드레일 핸드가드** (K2C3 의 2,048 보다 큼 — 짧아진 총열만큼 앞으로 더 나옴) |
+| 40 ~ 68% | 1,091 / 780 | **총몸(리시버)** |
+| 41 ~ 60% | 135 / 156 / 144 | **장전손잡이 · 노리쇠 후보** |
+| 57 ~ 68% | 390 | 권총손잡이 |
+| 66 ~ 92% | 422 | 버퍼튜브 |
+| **82 ~ 100%** | 560 / 114 | **신축식 개머리판** — 두 조각(K2 는 한 덩어리) |
+
+**세 모델 모두 핸드가드·총열·총몸·개머리판이 독립 셸** → 3절의 부품 교체(모듈) 구조가
+데이터로 확인됐다. 특히 **개머리판의 분리 방식 자체가 다르다** — K2 의 접이식은 한
+덩어리(1,062 tri), K2C3/K2C4 의 신축식은 두 조각(560+114 tri, 아마 신축 튜브 + 버트
+패드가 분리)으로 나뉜다. Unity 리깅 때 접힘 힌지와 신축 슬라이드는 **서로 다른 로직**
+이 필요하다는 뜻.
 
 ### 1.5 주의할 점
 
-- 12,749 tri 를 **부품별로 쪼개면 각 파츠는 저폴리**가 된다. 1인칭으로 가까이 보면 티가 남
+- 12,000~13,000 tri 를 **부품별로 쪼개면 각 파츠는 저폴리**가 된다. 1인칭으로 가까이
+  보면 티가 남. K2 가 9,646 tri 로 가장 적어서 특히 그럴 수 있음
 - 단면 두께 `0.02` 수준의 얇은 조각 존재 → **단면(single-sided) 지오메트리**일 수 있음.
   Unity 에서 뒷면이 비치면 그 조각만 두께를 주거나 양면 셰이더
-- 모델에 **탄창이 없음**(빈 탄창실). EFT 에선 탄창이 별개 아이템이므로 **오히려 정상**
+- 모델에 **탄창이 없음**(빈 탄창실, 3종 공통). EFT 에선 탄창이 별개 아이템이므로
+  **오히려 정상**
+- K2 의 노드/메시 이름이 인코딩 손상으로 복구 불가 — 블렌더에서 부품을 고를 때 이름을
+  못 믿고 **위 위치 지도와 실제 모양으로** 판별해야 함
 
 ---
 
@@ -233,15 +294,21 @@ nodes 9 / meshes 2 / skins 없음 / animations 없음 / materials 2 / textures 8
 
 ## 6. 다음 액션
 
-- [x] Sketchfab 제작자 댓글 스크린샷 보관
-- [ ] **K2 의 `license.txt` 확인** — K2C3(BY) 와 K2C4(BY-SA) 가 다르므로 셋 다 대조
-      전까지 최종 라이선스 표기 확정 불가
+- [x] Sketchfab 제작자 댓글 스크린샷 보관 (+ 전사 기록, 1.1절)
+- [x] **K2 · K2C3 · K2C4 의 `license.txt` 전부 확인** — 셋 다 다름 (Standard / BY / BY-SA)
+- [x] K2 · K2C4 도 glTF 데이터 분석 완료 (1.3~1.4절)
+- [ ] **K2 공개 배포 방식 결정 필요** — 지금 public 레포 Release 에 K2 원본이 독립
+      파일로 올라가 있음. Standard 라이선스의 "stand-alone 배포 금지" 조항에 걸릴 수
+      있음. 비공개 전환 / K2 원본만 Release 에서 제외 / 현행 유지 중 택1 (1.1절 참조)
+- [ ] `sketchfab.com/licenses` Standard 원문 직접 대조 (지금은 검색 결과로 재구성함,
+      프록시가 sketchfab.com 을 막아 직접 못 읾음)
 - [ ] **서버 모드 뼈대 생성** ← 여기서 시작하면 됨
 - [ ] 4.1.5 DB 에서 HK416A5 실제 템플릿 ID 확인 (기억 금지, 실물 확인)
-- [ ] K2 · K2C4 도 glTF 데이터 분석 (1.3~1.4절 방식) — 지금은 사용자 육안 확인만 됨
-- [ ] 블렌더에서 `By Loose Parts` → 기능별 그룹핑 (사용자)
+- [ ] 블렌더에서 `By Loose Parts` → 기능별 그룹핑 (사용자). K2 는 이름이 손상돼
+      위치·모양으로 판별할 것
 - [ ] 레포명 규칙: 내가 만든 모드이므로 `-zzap--Bootleg-` 접미사 **불필요**
-- [ ] README 는 한국어, 최상단에 원작자/원본/라이선스 + **CC-BY-SA-4.0** 크레딧 문구
+- [ ] README 는 한국어, 최상단에 원작자/원본/라이선스(**3종 각각 별도 크레딧** — Standard·
+      BY·BY-SA 문구가 서로 다름) + 결과물 자체는 **CC-BY-SA-4.0** 표시
       (K2C4 가 섞이므로 SA 조항이 결과물 전체에 적용됨)
 
 ---
