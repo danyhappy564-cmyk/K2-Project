@@ -302,9 +302,8 @@ by GAMGO (https://sketchfab.com/gamgo_studio) — Sketchfab Standard License
 - [x] Sketchfab 제작자 댓글 스크린샷 보관 (+ 전사 기록, 1.1절)
 - [x] **K2 · K2C3 · K2C4 의 `license.txt` 전부 확인** — 셋 다 다름 (Standard / BY / BY-SA)
 - [x] K2 · K2C4 도 glTF 데이터 분석 완료 (1.3~1.4절)
-- [x] **K2 공개 배포 방식 결정** — Release 삭제로 결정 (1.1절)
-- [ ] **`fbx` · `glTF` Release 를 GitHub 웹에서 직접 삭제** — Claude 가 쓸 수 있는
-      GitHub 툴엔 삭제 기능이 없어 사용자가 직접 해야 함 (Releases 탭 → 태그 → Delete)
+- [x] **K2 공개 배포 방식 결정 + 실제 삭제 완료** — `fbx`·`glTF` Release 둘 다 사용자가
+      GitHub 웹에서 직접 삭제, `GET /releases` 로 빈 배열 확인 (2026-09-16, 1.1절)
 - [x] 분석에 쓴 가벼운 파일(`scene.gltf`·`license.txt` 6개, 48KB) 은 삭제 전에
       `k2 project/모델 원본 데이터/` 에 git 커밋으로 보존
 - [ ] `sketchfab.com/licenses` Standard 원문 직접 대조 (지금은 검색 결과로 재구성함,
