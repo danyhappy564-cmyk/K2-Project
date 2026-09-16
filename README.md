@@ -4,7 +4,8 @@
 > 제작: **C33** / **R_F**
 
 한국군 제식소총 K2 와 그 파생형을 Escape from Tushonka (SPT) 에 이식하는 프로젝트입니다.
-모델은 [GAMGO](https://sketchfab.com/gamgo_studio) 님의 CC-BY-4.0 에셋을 사용합니다.
+모델은 [GAMGO](https://sketchfab.com/gamgo_studio) 님의 CC 라이선스 에셋을 사용합니다
+> (모델별로 CC-BY-4.0 / CC-BY-SA-4.0 로 다름 — 아래 라이선스 절 확인).
 
 ---
 
@@ -18,8 +19,27 @@
 | K2C3 | https://sketchfab.com/3d-models/k2c3-39bb1eeed4b949c7a620b16667262faf |
 | K2C4 | https://sketchfab.com/3d-models/k2c4-f23ce806f7324a7088a84e7bd859eaf5 |
 
-**라이선스: CC-BY-4.0** — 저작자 표시만 하면 **상업적 이용까지 허용**됩니다.
-(K2C3 동봉 `license.txt` 에서 확인. `requirements: Author must be credited. Commercial use is allowed.`)
+### ⚠️ 세 모델의 라이선스가 서로 다릅니다
+
+| 모델 | 라이선스 (동봉 `license.txt` 확인) | 요구사항 |
+|---|---|---|
+| K2C3 | **CC-BY-4.0** | 저작자 표시만 하면 상업적 이용까지 허용 |
+| **K2C4** | **CC-BY-SA-4.0** | 저작자 표시 **+ 파생물도 동일 라이선스로 공개 (ShareAlike)** |
+| K2 | 미확인 | ⬜ `license.txt` 확인 필요 |
+
+**계획(부품 갈아끼우기)상 SA 조항은 반드시 트리거됩니다.** CC-BY-SA 의 "각색물(adapted
+material)"은 리깅·절단·재배열·수정을 전부 포함합니다 — K2C4 를 부품으로 잘라 다른
+모델과 합치는 순간, 그대로 내보내든 일부만 쓰든 상관없이 각색물이 됩니다.
+
+**다만 방향은 문제없습니다.** CC-BY(K2, K2C3) 를 CC-BY-SA(K2C4) 결과물에 포함시키는
+건 허용되고, 반대(BY-SA → BY 로 낮추기)만 금지입니다.
+
+> **결론: 최종 결합 3D 에셋은 CC-BY-SA-4.0 으로 배포합니다.** 서버 모드 코드(C#)는
+> 별개 저작물이므로 그대로 다른 라이선스(예: MIT)를 유지해도 됩니다 — SA 는 **3D 에셋
+> 에만** 적용됩니다.
+>
+> 실무적으로는: 누가 이 모드의 3D 에셋을 가져가 개조해서 배포하면, 그 사람도 같은
+> 조건(BY-SA)으로 공개해야 합니다. 무료 SPT 모드라 실질적 제약은 없습니다.
 
 라이선스가 요구하는 크레딧 문구입니다. **배포물·공유처 어디에나 아래를 그대로 포함해야 합니다.**
 
@@ -28,21 +48,37 @@ This work is based on "K2C3" (https://sketchfab.com/3d-models/k2c3-39bb1eeed4b94
 by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-4.0
 (http://creativecommons.org/licenses/by/4.0/)
 
+This work is based on "K2C4" (https://sketchfab.com/3d-models/k2c4-f23ce806f7324a7088a84e7bd859eaf5)
+by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-SA-4.0
+(http://creativecommons.org/licenses/by-sa/4.0/)
+
 This work is based on "Daewoo K2" (https://sketchfab.com/3d-models/daewoo-k2-258d30e1f3e04c13a60abd916425b0c2)
 by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-4.0
-(http://creativecommons.org/licenses/by/4.0/)
-
-This work is based on "K2C4" (https://sketchfab.com/3d-models/k2c4-f23ce806f7324a7088a84e7bd859eaf5)
-by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-4.0
-(http://creativecommons.org/licenses/by/4.0/)
+(http://creativecommons.org/licenses/by/4.0/)   ← K2 는 아직 미확인, license.txt 로 대조 필요
 ```
 
-제작자가 Sketchfab 댓글로도 *"제 모델중 다운로드 가능한 모든 3D 모델은 제한없이
-이용가능하십니다"* 라고 직접 밝혔습니다. **해당 댓글은 스크린샷으로 보관해 두세요** —
-계정이나 모델이 내려가면 근거가 사라집니다.
+이 결과물 전체를 배포할 때는 위 셋을 다 붙이는 동시에, **자체 라이선스 표시로
+CC-BY-SA-4.0 을 명시**합니다 (SA 조항이 걸린 K2C4 를 포함하므로 결과물 전체가
+BY-SA 를 따라야 함).
 
-> ⚠️ **TODO**: `license.txt` 를 직접 확인한 것은 **K2C3 뿐**입니다. K2 · K2C4 의 동봉
-> 라이선스 파일도 확인해서 동일한지 대조 필요.
+### 제작자 댓글 (보관용 전사, 2026-09-16 스크린샷 확보)
+
+Sketchfab 모델 페이지, 3년 전 댓글. **"게임 모드 제작에 써도 되는지"를 직접 질문하고
+받은 답변**이라 이 프로젝트 용도와 정확히 일치합니다.
+
+> **dotolwi** (3년 전)
+> 게임에 모드를 만들려고 하는데 혹시 이 모델을 사용해도 괜찮은지 여쭐수 있을까요?
+>
+> **GAMGO** (@gamgo, Model author, 3년 전)
+> @dotolwi 답변이 늦어 죄송합니다. 제 모델중 다운로드 가능한 모든 3D 모델은 제한없이
+> 이용가능하십니다. 덧글 감사합니다
+
+원본 스크린샷은 별도 보관합니다 — 계정이나 모델이 내려가면 이 전사만 근거로 남습니다.
+다만 이 댓글이 라이선스 조건(특히 K2C4 의 SA)을 공식적으로 면제해주는 문서는 아니므로,
+**동봉된 `license.txt` 를 1차 근거로 삼고 이 댓글은 보강 근거로 취급합니다.**
+
+> ⚠️ **TODO**: K2 의 `license.txt` 확인 필요 — K2C3(BY) 와 K2C4(BY-SA) 가 서로
+> 다르므로 K2 도 다를 수 있음. 셋 다 확인 후에만 최종 라이선스 표기를 확정할 것.
 
 ---
 

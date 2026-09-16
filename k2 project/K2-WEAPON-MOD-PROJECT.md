@@ -7,32 +7,85 @@
 
 ## 0. 한 줄 요약
 
-GAMGO 의 CC-BY-4.0 K2 모델로 SPT 4.1.5 용 무기 모드를 만든다. **모델 평가는 끝났고
+GAMGO 의 K2 계열 모델 3종으로 SPT 4.1.5 용 무기 모드를 만든다. **모델 평가는 끝났고
 결과는 "할 만하다"** 다. 서버 쪽은 모델과 무관하게 지금 바로 시작할 수 있다.
+**단, 세 모델의 라이선스가 서로 다르다 — 아래 1.1절 필독.**
 
 ---
 
 ## 1. 모델 — 확인 완료
 
-### 1.1 라이선스 (해결됨)
+### 1.1 라이선스 — ⚠️ 모델마다 다름 (2026-09-16 정정)
 
-`license.txt` 에 명시:
+처음에 "CC-BY-4.0" 으로 통일해서 적었던 것은 **틀렸다.** 각 모델 동봉 `license.txt`
+를 직접 대조한 결과:
+
+| 모델 | 라이선스 | 요구사항 |
+|---|---|---|
+| K2C3 | **CC-BY-4.0** | 저작자 표시만 하면 상업적 이용까지 허용 |
+| **K2C4** | **CC-BY-SA-4.0** | 저작자 표시 **+ 파생물도 동일 라이선스로 공개(ShareAlike)** |
+| K2 | ⬜ 미확인 | `license.txt` 대조 필요 |
 
 ```
+# K2C3
 license type: CC-BY-4.0  (http://creativecommons.org/licenses/by/4.0/)
 requirements: Author must be credited. Commercial use is allowed.
+
+# K2C4
+license type: CC-BY-SA-4.0  (http://creativecommons.org/licenses/by-sa/4.0/)
+requirements: Author must be credited. Modified versions must have the same
+              license. Commercial use is allowed.
 ```
 
-**배포물에 반드시 아래 문구를 그대로 넣어야 한다** (license.txt 가 요구하는 원문):
+**왜 이게 중요한가 — SA 조항은 이 프로젝트의 계획(부품 갈아끼우기)상 반드시 걸린다.**
+CC-BY-SA 의 "각색물(adapted material)" 정의는 번역·변형·배열·수정을 전부 포함한다.
+K2C4 를 리깅하고 잘라서 다른 모델의 부품과 합치는 것은 그대로 각색이다 — 원본을
+그대로 쓰든 조각 하나만 떼오든 트리거된다.
+
+**다만 라이선스 결합 방향은 문제없다.** CC-BY(K2, K2C3) 를 CC-BY-SA(K2C4) 로 된
+결과물에 포함시키는 건 허용된다(BY 는 SA 보다 약한 조건이라 상위 라이선스에 포함
+가능). 반대로 BY-SA 를 BY 로 낮추는 것만 금지다.
+
+> **결론: 최종 결합 3D 에셋 전체를 CC-BY-SA-4.0 으로 배포한다.**
+> 서버 모드 코드(C#)는 별개 저작물이므로 다른 라이선스(예: MIT)를 그대로 써도 된다
+> — SA 는 **3D 에셋에만** 적용된다.
+>
+> 실무적 의미: 누가 이 모드의 3D 에셋을 가져가 개조해서 배포하면, 그 사람도 같은
+> 조건(BY-SA)으로 공개해야 한다. 무료 SPT 모드라 실질적 제약은 없다.
+
+**배포물에 반드시 아래 문구를 그대로 넣어야 한다** (각 `license.txt` 가 요구하는 원문):
 
 ```
 This work is based on "K2C3" (https://sketchfab.com/3d-models/k2c3-39bb1eeed4b949c7a620b16667262faf)
 by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-4.0
 (http://creativecommons.org/licenses/by/4.0/)
+
+This work is based on "K2C4" (https://sketchfab.com/3d-models/k2c4-f23ce806f7324a7088a84e7bd859eaf5)
+by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-SA-4.0
+(http://creativecommons.org/licenses/by-sa/4.0/)
 ```
 
-제작자가 Sketchfab 댓글로도 "다운로드 가능한 모든 모델은 제한없이 이용 가능" 이라고
-직접 남겼다. **그 댓글은 스크린샷으로 보관해 둘 것** (계정/모델이 내려갈 수 있음).
++ K2 의 문구는 `license.txt` 확인 후 추가. 결과물 자체에도 **CC-BY-SA-4.0 표시를
+같이 건다** (K2C4 의 SA 조항이 결과물 전체로 전파되므로).
+
+제작자 댓글 (전사, 스크린샷 확보됨 2026-09-16) — Sketchfab 모델 페이지, 3년 전.
+"게임 모드 제작에 써도 되는지"를 직접 물은 질문에 대한 답변이라 용도가 정확히 맞는다:
+
+> dotolwi: 게임에 모드를 만들려고 하는데 혹시 이 모델을 사용해도 괜찮은지 여쭐수
+> 있을까요?
+> GAMGO (@gamgo, Model author): @dotolwi 답변이 늦어 죄송합니다. 제 모델중 다운로드
+> 가능한 모든 3D 모델은 제한없이 이용가능하십니다. 덧글 감사합니다
+
+다만 이 댓글이 SA 조항 자체를 면제해주는 공식 문서는 아니므로, **`license.txt` 를
+1차 근거로 삼는다.**
+
+### 1.1.1 loose part 구조 — 사용자 확인 (2026-09-16)
+
+K2C3 는 이 문서 1.3절처럼 데이터로 직접 분석했다. **K2 · K2C4 는 사용자가 glTF 를
+직접 열어 눈으로 확인**했고, 셋 다 "가능(부품 갈아끼우기 구조로 갈 수 있다)" 는
+결론을 받았다. K2 · K2C4 의 정확한 삼각형 수 · loose part 개수 · 부품 위치 지도는
+아직 데이터 기반으로 뽑지 않았다 — glTF 파일이 주어지면 1.3~1.4절과 같은 방식으로
+채울 것.
 
 ### 1.2 확보한 변형 3종
 
@@ -180,12 +233,16 @@ nodes 9 / meshes 2 / skins 없음 / animations 없음 / materials 2 / textures 8
 
 ## 6. 다음 액션
 
-- [ ] Sketchfab 제작자 댓글 스크린샷 보관
+- [x] Sketchfab 제작자 댓글 스크린샷 보관
+- [ ] **K2 의 `license.txt` 확인** — K2C3(BY) 와 K2C4(BY-SA) 가 다르므로 셋 다 대조
+      전까지 최종 라이선스 표기 확정 불가
 - [ ] **서버 모드 뼈대 생성** ← 여기서 시작하면 됨
 - [ ] 4.1.5 DB 에서 HK416A5 실제 템플릿 ID 확인 (기억 금지, 실물 확인)
+- [ ] K2 · K2C4 도 glTF 데이터 분석 (1.3~1.4절 방식) — 지금은 사용자 육안 확인만 됨
 - [ ] 블렌더에서 `By Loose Parts` → 기능별 그룹핑 (사용자)
 - [ ] 레포명 규칙: 내가 만든 모드이므로 `-zzap--Bootleg-` 접미사 **불필요**
-- [ ] README 는 한국어, 최상단에 원작자/원본/라이선스 + CC-BY 크레딧 문구
+- [ ] README 는 한국어, 최상단에 원작자/원본/라이선스 + **CC-BY-SA-4.0** 크레딧 문구
+      (K2C4 가 섞이므로 SA 조항이 결과물 전체에 적용됨)
 
 ---
 
