@@ -3,7 +3,7 @@
 > **SPT 4.1.5 용 대우정밀 K2 계열 소총 모드**
 > 제작: **C33** / **R_F**
 
-한국군 제식소총 K2 와 그 파생형을 Escape from Tarkov (SPT) 에 이식하는 프로젝트입니다.
+한국군 제식소총 K2 와 그 파생형을 Escape from Tushonka (SPT) 에 이식하는 프로젝트입니다.
 모델은 [GAMGO](https://sketchfab.com/gamgo_studio) 님의 CC-BY-4.0 에셋을 사용합니다.
 
 ---
