@@ -1,0 +1,8 @@
+Model Information:
+* title:	DAEWOO - K2
+* source:	https://sketchfab.com/3d-models/daewoo-k2-258d30e1f3e04c13a60abd916425b0c2
+* author:	GAMGO (https://sketchfab.com/gamgo_studio)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

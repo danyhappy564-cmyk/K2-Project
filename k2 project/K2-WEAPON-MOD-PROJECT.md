@@ -50,13 +50,18 @@ requirements: Author must be credited. Modified versions must have the same
 > you to others is allowed)."* — [Sketchfab License Agreement](https://sketchfab.com/licenses)
 
 컴파일된 Unity AssetBundle 에 녹여 넣는 건 이 조항에 안 걸린다(업계 표준 해석 — 게임에
-구워 넣는 게 Standard 라이선스가 겨냥하는 정상 용도). **문제는 이 저장소가 public 이고
-Release 에 K2 원본 FBX/glTF 를 독립 파일 그대로 올려서 누구나 받게 해뒀다는 것** —
-이건 "stand-alone file 로 접근 가능하게 하는 것" 에 해당할 수 있다. K2C3/K2C4 는
-CC-BY 계열이라 원본 공유 자체가 허용되므로 문제없음 — **K2 파일만 걸린다.**
+구워 넣는 게 Standard 라이선스가 겨냥하는 정상 용도). **문제였던 건 이 저장소가 public
+이고 Release 에 K2 원본 FBX/glTF 를 독립 파일 그대로 올려서 누구나 받게 해뒀다는 것**
+— "stand-alone file 로 접근 가능하게 하는 것" 에 해당할 수 있었다. K2C3/K2C4 는
+CC-BY 계열이라 원본 공유 자체가 허용되므로 원래 문제없었음.
 
-→ 조치 필요: 레포 비공개 전환 / Release 에서 K2 원본만 제외 / 현행 유지(댓글 근거로)
-중 택1. 6절 체크리스트 참조.
+✅ **결정 (2026-09-16): 분석이 끝났으므로 Release 두 개(`fbx`, `glTF`)를 삭제한다.**
+git 커밋과 달리 Release 는 지우면 히스토리에 남지 않는다. 팀원은 원본을 직접 만들어
+올린 쪽이라 로컬에 이미 갖고 있으므로 작업엔 지장 없고, 삭제되는 건 "제3자가 독립
+파일로 받아갈 수 있는 상태"뿐이다. 분석에 쓴 가벼운 파일(`scene.gltf`·`license.txt`,
+6개 48KB)은 `k2 project/모델 원본 데이터/` 에 git 커밋으로 남겨 법적 근거와 설계도를
+보존한다. **Claude 가 쓸 수 있는 GitHub 툴엔 Release 삭제 기능이 없어**, 실제 삭제는
+사용자가 GitHub 웹에서 직접 한다(Releases 탭 → 태그 → Delete). 6절 체크리스트 참조.
 
 **왜 이게 중요한가 — SA 조항은 이 프로젝트의 계획(부품 갈아끼우기)상 반드시 걸린다.**
 CC-BY-SA 의 "각색물(adapted material)" 정의는 번역·변형·배열·수정을 전부 포함한다.
@@ -297,9 +302,11 @@ by GAMGO (https://sketchfab.com/gamgo_studio) — Sketchfab Standard License
 - [x] Sketchfab 제작자 댓글 스크린샷 보관 (+ 전사 기록, 1.1절)
 - [x] **K2 · K2C3 · K2C4 의 `license.txt` 전부 확인** — 셋 다 다름 (Standard / BY / BY-SA)
 - [x] K2 · K2C4 도 glTF 데이터 분석 완료 (1.3~1.4절)
-- [ ] **K2 공개 배포 방식 결정 필요** — 지금 public 레포 Release 에 K2 원본이 독립
-      파일로 올라가 있음. Standard 라이선스의 "stand-alone 배포 금지" 조항에 걸릴 수
-      있음. 비공개 전환 / K2 원본만 Release 에서 제외 / 현행 유지 중 택1 (1.1절 참조)
+- [x] **K2 공개 배포 방식 결정** — Release 삭제로 결정 (1.1절)
+- [ ] **`fbx` · `glTF` Release 를 GitHub 웹에서 직접 삭제** — Claude 가 쓸 수 있는
+      GitHub 툴엔 삭제 기능이 없어 사용자가 직접 해야 함 (Releases 탭 → 태그 → Delete)
+- [x] 분석에 쓴 가벼운 파일(`scene.gltf`·`license.txt` 6개, 48KB) 은 삭제 전에
+      `k2 project/모델 원본 데이터/` 에 git 커밋으로 보존
 - [ ] `sketchfab.com/licenses` Standard 원문 직접 대조 (지금은 검색 결과로 재구성함,
       프록시가 sketchfab.com 을 막아 직접 못 읾음)
 - [ ] **서버 모드 뼈대 생성** ← 여기서 시작하면 됨

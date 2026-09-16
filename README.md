@@ -38,7 +38,7 @@ material)"은 리깅·절단·재배열·수정을 전부 포함합니다 — K2
 문제없습니다 — CC-BY(K2C3) 를 CC-BY-SA(K2C4) 결과물에 포함시키는 건 허용되고, 반대만
 금지입니다. → **최종 결합 3D 에셋은 CC-BY-SA-4.0 으로 배포합니다.**
 
-#### K2 — Sketchfab Standard, ⚠️ 별도 조치 필요
+#### K2 — Sketchfab Standard, 조치 완료(회수 결정)
 
 Standard 라이선스 원문(검색 결과 기준, [Sketchfab License Agreement](https://sketchfab.com/licenses)):
 
@@ -49,17 +49,13 @@ Standard 라이선스 원문(검색 결과 기준, [Sketchfab License Agreement]
 **모드(컴파일된 Unity AssetBundle)에 녹여 넣는 건 문제없습니다** — 이건 3D 마켓플레이스
 업계에서 "Standard" 가 정확히 겨냥하는 용도(게임에 구워 넣기)입니다.
 
-**문제는 이 저장소입니다.** 지금 이 레포는 **공개(public)** 이고, Release 에 K2 의
-원본 FBX/glTF 를 **독립 파일 그대로** 올려서 누구나 받을 수 있게 해뒀습니다. 이건
-Standard 라이선스가 명시적으로 금지하는 "stand-alone file 로 접근 가능하게 하는 것"
-에 해당할 수 있습니다 (K2C3/K2C4 는 CC-BY 계열이라 원본 공유 자체가 허용되므로 이
-문제가 없습니다 — **K2 만 걸립니다**).
+**문제였던 건 이 저장소가 공개(public) 상태로 K2 원본을 독립 파일로 배포하고 있던
+것**입니다. Standard 라이선스가 금지하는 "stand-alone file 로 접근 가능하게 하는 것"
+에 해당할 수 있었습니다(K2C3/K2C4 는 CC-BY 계열이라 원래 문제없었음).
 
-> **조치가 필요합니다 — 아래 중 하나를 선택:**
-> 1. 레포를 **비공개(private)** 로 전환 (팀 내부 협업용으로만)
-> 2. 또는 공개 Release 에서 **K2 원본 파일만** 빼고, 완성된 AssetBundle 만 공개 배포
-> 3. 또는 GAMGO 댓글("제한없이 이용가능")을 원본 공개도 허용하는 것으로 해석하고 그대로
->    진행 — 다만 이건 **공식 라이선스 문서보다 약한 근거**이므로 신중히 결정할 것
+✅ **2026-09-16 결정: 모델 분석이 끝났으므로 두 Release 를 삭제해서 회수합니다.**
+분석에 쓴 가벼운 파일만 git 에 남기고 나머지는 그냥 지웁니다 — 아래
+[원본 에셋(Release)](#원본-에셋-release--분석-완료로-회수-예정) 절 참조.
 
 라이선스가 요구하는 크레딧 문구입니다. **배포물·공유처 어디에나 아래를 그대로 포함해야 합니다.**
 
@@ -145,7 +141,7 @@ Sketchfab 모델 페이지, 3년 전 댓글. **"게임 모드 제작에 써도 �
 | 모델 확보 (K2 / K2C3 / K2C4, FBX·glTF) | ✅ |
 | 라이선스 확인 (3종 전부) | ✅ 셋 다 다름 — 위 표 참조 |
 | **K2 · K2C3 · K2C4 모델 구조 분석** | ✅ 완료 |
-| K2 공개 저장소 배포 방식 결정 (Standard 라이선스) | ⬜ **결정 필요** |
+| 라이선스 위험 해소 (Release 삭제 결정) | ✅ 결정됨 — ⬜ **실제 삭제는 GitHub 웹에서 수동** |
 | 블렌더 부품 분리·묶기 | ⬜ |
 | Unity 프리팹·번들 | ⬜ |
 | 서버 모드 (템플릿·슬롯·로케일·상인) | ⬜ |
@@ -284,24 +280,37 @@ k2 project/
   모델 사진/  K2.png  K2C3.png  K2C4.png     변형별 외형
 ```
 
-### 원본 에셋 (Release)
+### 원본 에셋 (Release) — 분석 완료로 회수 예정
 
-FBX 원본은 **103MB** 라 git 에 커밋할 수 없어 Release 로 올립니다.
+FBX 원본은 **103MB** 라 git 에 커밋할 수 없어 Release 로 올렸습니다.
 
-| 태그 | 파일 | 크기 |
-|---|---|---|
-| [`fbx`](https://github.com/danyhappy564-cmyk/K2-Project/releases/tag/fbx) | `k2_fbx.7z` | 103 MB |
-| [`glTF`](https://github.com/danyhappy564-cmyk/K2-Project/releases/tag/glTF) | `k2_glTF.7z` (K2·K2C3·K2C4 전부) | 24.5 MB |
+| 태그 | 파일 | 크기 | 상태 |
+|---|---|---|---|
+| [`fbx`](https://github.com/danyhappy564-cmyk/K2-Project/releases/tag/fbx) | `k2_fbx.7z` | 103 MB | ⬜ **삭제 예정** |
+| [`glTF`](https://github.com/danyhappy564-cmyk/K2-Project/releases/tag/glTF) | `k2_glTF.7z` (K2·K2C3·K2C4 전부) | 24.5 MB | ⬜ **삭제 예정** |
 
-⚠️ **이 레포는 현재 공개(public) 이고, 위 두 Release 에 K2 원본이 그대로 들어 있습니다.**
-K2 는 Sketchfab Standard 라이선스라 "독립 파일로 접근 가능하게 하는 것"이 금지될 수
-있습니다 — 위 라이선스 절의 조치 방안 참조 후 결정할 것.
+**2026-09-16 결정: 분석이 끝났으므로 두 Release 를 삭제합니다.** K2 는 Sketchfab
+Standard 라이선스라 원본을 독립 파일로 계속 공개해 둘 이유가 없어지는 게 가장 큽니다
+(K2C3/K2C4 는 CC-BY 계열이라 원래도 문제없었지만, 어차피 분석 끝난 원본을 같이 정리).
+**git 커밋과 달리 Release 는 지우면 히스토리에 남지 않고 그냥 없어집니다.**
 
-**원본 3D 에셋은 git 에 커밋하지 마세요.** 한 번 커밋하면 히스토리에 영구히 박혀서,
-나중에 지워도 모든 클론이 계속 내려받습니다. 큰 바이너리는 전부 Release 로 갑니다.
+- 팀원(형·C33)은 이 파일들을 직접 만들어 올렸으므로 **로컬에 원본이 이미 있습니다** —
+  Release 를 지워도 나중에 블렌더·Unity 작업에 지장 없습니다. 삭제되는 건 "제3자가
+  독립 파일로 받아갈 수 있는 상태"뿐입니다
+- 분석에 실제로 쓴 가벼운 파일(`scene.gltf` · `license.txt`, 6개 합쳐 48KB)은 git
+  본체의 [`k2 project/모델 원본 데이터/`](k2%20project/모델%20원본%20데이터/) 에
+  커밋해서 남겨둡니다 — 법적 근거 원본과 부품 지도 재계산용 설계도는 계속 보관됩니다.
+  `.bin`(정점 데이터)·텍스처·FBX 는 git 에 안 남기고 삭제됩니다
+- **삭제는 GitHub 웹에서 직접 해야 합니다** — 지금 붙은 GitHub 툴에 Release 삭제
+  기능이 없어서 저는 못 지웁니다. `Releases` 탭 → 해당 태그 클릭 → 우측 연필(Edit)
+  옆 `Delete` → 확인. 태그 자체도 지울지 물어보면 같이 지워도 됩니다
+
+**원본 3D 에셋은 git 본체에 커밋하지 마세요.** 한 번 커밋하면 히스토리에 영구히 박혀서
+Release 와 달리 지워도 안 없어집니다. 앞으로 나올 빌드된 AssetBundle 등 큰 바이너리는
+전부 Release 로 올리고, 이번처럼 **다 쓴 뒤 지우면 됩니다.**
 
 - git 본체 → 소스코드, 문서, `scene.gltf`, `license.txt` (텍스트라 가볍고 diff 가 됨)
-- Release → FBX·텍스처 원본, 빌드된 AssetBundle
+- Release → FBX·텍스처 원본, 빌드된 AssetBundle (다 쓰면 지워도 무방)
 - Git LFS 는 쓰지 않습니다 (무료 한도가 3D 에셋엔 금방 참)
 
 ---
@@ -322,7 +331,9 @@ K2 는 Sketchfab Standard 라이선스라 "독립 파일로 접근 가능하게 
 - [x] K2 · K2C4 도 glTF 구조 분석 (부품 지도 완성) — 2026-09-16
 - [x] K2 · K2C4 의 `license.txt` 확인 — 셋 다 라이선스가 다름을 확인
 - [x] Sketchfab 제작자 댓글 스크린샷 보관 (+ 전사 기록)
-- [ ] **K2 공개 배포 방식 결정** (비공개 전환 / Release 에서 K2 원본 제외 / 현행 유지 중 택1)
+- [x] **K2 공개 배포 방식 결정** — Release 삭제로 결정 (2026-09-16)
+- [ ] **`fbx` · `glTF` Release 를 GitHub 웹에서 직접 삭제** (Releases 탭 → 태그 → Delete;
+      Claude 가 쓸 수 있는 GitHub 툴엔 Release 삭제 기능이 없음)
 - [ ] `sketchfab.com/licenses` 원문 직접 대조 (Standard 조항, 지금은 검색 결과로 재구성함)
 - [ ] 서버 모드 뼈대 생성 (모델과 무관하게 선행 가능)
 - [ ] SPT 4.1.5 DB 에서 HK416A5 실제 템플릿 ID 확인 (기억에 의존 금지)
