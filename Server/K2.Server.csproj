@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>K2.Server</AssemblyName>
+    <Version>0.1.0</Version>
+    <SptRuntimeDir>$(MSBuildThisFileDirectory)..\..\02_Resources\SPT\SPT-4.1.5\SPT_Runtime</SptRuntimeDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SemanticVersioning"><HintPath>$(SptRuntimeDir)\SemanticVersioning.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SPTarkov.Common"><HintPath>$(SptRuntimeDir)\SPTarkov.Common.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SPTarkov.DI"><HintPath>$(SptRuntimeDir)\SPTarkov.DI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SPTarkov.Server.Core"><HintPath>$(SptRuntimeDir)\SPTarkov.Server.Core.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
