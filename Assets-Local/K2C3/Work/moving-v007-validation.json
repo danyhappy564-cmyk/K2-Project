@@ -1,0 +1,35 @@
+{
+  "bones": 5,
+  "rest_error": 2.514570951461792e-08,
+  "tests": [
+    {
+      "bone": "weapon_bolt",
+      "changed_parts": [
+        159,
+        160,
+        165
+      ],
+      "mode": "slide",
+      "pass": true
+    },
+    {
+      "bone": "weapon_trigger",
+      "changed_parts": [
+        192
+      ],
+      "mode": "rotate",
+      "pass": true
+    }
+  ],
+  "unclassified": 16,
+  "preview_only": true,
+  "preview_changed_parts": [
+    159,
+    160,
+    165,
+    192
+  ],
+  "return_error": 0.0,
+  "trigger_rotation_axis": "local Z = transverse world -X",
+  "preview_frame_check": true
+}

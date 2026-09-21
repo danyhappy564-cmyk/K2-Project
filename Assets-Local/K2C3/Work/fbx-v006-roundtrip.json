@@ -1,0 +1,14 @@
+{
+  "meshes": 212,
+  "rigs": 1,
+  "bones": [
+    "weapon",
+    "weapon_trigger",
+    "mod_charge",
+    "mod_stock"
+  ],
+  "vertices": 13840,
+  "polygons": 12732,
+  "bounds_error_m": 5.960464477539063e-08,
+  "invalid_meshes": []
+}

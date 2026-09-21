@@ -12,19 +12,19 @@
   "parentId": "5447b5f14bdc2d61278b4567",
   "locales": {
     "en": {
-      "shortName": "K2 Proto",
-      "name": "Daewoo K2 5.56x45 (Prototype)",
-      "description": "Server prototype. Uses the HK416 model, animations and attachments temporarily. Rate of fire: 750 RPM. Custom K2 model is not included."
+      "shortName": "K2C3 Test",
+      "name": "Daewoo K2C3 5.56x45 (Visual Test)",
+      "description": "K2C3 static visual test for SPT 4.1.6. Requires K2.Visual client plugin. Uses HK416 animations, attachment mechanics and aiming. Custom moving parts and sight alignment are unfinished. 750 RPM."
     },
     "kr": {
-      "shortName": "K2 시험용",
-      "name": "대우정밀 K2 5.56×45 돌격소총 (시험용)",
-      "description": "서버 기능 검증용 K2입니다. 외형·애니메이션·부품은 임시로 HK416을 사용하며 연사속도는 분당 750발입니다. K2 전용 모델은 아직 포함되지 않았습니다."
+      "shortName": "K2C3 시험용",
+      "name": "대우정밀 K2C3 5.56×45 (외형 시험)",
+      "description": "SPT 4.1.6용 K2C3 정적 외형 시험판. K2.Visual 클라이언트 플러그인이 필요합니다. 애니메이션·부품 동작·조준은 HK416 기반이며 전용 가동부와 조준 정렬은 미완성입니다. 연사속도 분당 750발."
     },
     "kr-en": {
-      "shortName": "K2 시험용",
-      "name": "대우정밀 K2 5.56×45 돌격소총 (Prototype)",
-      "description": "서버 기능 검증용 K2입니다. HK416 임시 외형과 부품을 사용하며 연사속도는 분당 750발입니다. K2 전용 모델은 아직 포함되지 않았습니다."
+      "shortName": "K2C3 시험용",
+      "name": "대우정밀 K2C3 5.56×45 (외형 시험)",
+      "description": "SPT 4.1.6용 K2C3 정적 외형 시험판. K2.Visual 클라이언트 플러그인이 필요합니다. 애니메이션·부품 동작·조준은 HK416 기반이며 전용 가동부와 조준 정렬은 미완성입니다. 연사속도 분당 750발."
     }
   },
   "fleaPriceRoubles": 50000,

@@ -1,0 +1,11 @@
+Model Information:
+* title:	K2C3
+* source:	https://sketchfab.com/3d-models/k2c3-39bb1eeed4b949c7a620b16667262faf
+* author:	GAMGO (https://sketchfab.com/gamgo_studio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "K2C3" (https://sketchfab.com/3d-models/k2c3-39bb1eeed4b949c7a620b16667262faf) by GAMGO (https://sketchfab.com/gamgo_studio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

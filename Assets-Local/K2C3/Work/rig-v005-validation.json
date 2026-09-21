@@ -1,0 +1,31 @@
+{
+  "parts": 212,
+  "bones": 4,
+  "rest_max_error": 5.331201499700075e-07,
+  "motion_tests": [
+    {
+      "bone": "weapon_trigger",
+      "moved_parts": [
+        192
+      ],
+      "pass": true
+    },
+    {
+      "bone": "mod_charge",
+      "moved_parts": [
+        160
+      ],
+      "pass": true
+    },
+    {
+      "bone": "mod_stock",
+      "moved_parts": [
+        210,
+        211
+      ],
+      "pass": true
+    }
+  ],
+  "unconfirmed_small_parts": 18,
+  "production_ready": false
+}

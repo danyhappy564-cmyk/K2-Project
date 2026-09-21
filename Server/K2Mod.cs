@@ -16,10 +16,10 @@ namespace K2Project;
 public record ModMetadata : IModMetadata
 {
     public string ModGuid { get; init; } = "com.k2project.server";
-    public string Name { get; init; } = "K2 Project - Prototype";
+    public string Name { get; init; } = "K2C3 - Visual Test";
     public string Author { get; init; } = "C33 / R_F";
-    public SemanticVersioning.Version Version { get; init; } = new("0.1.0");
-    public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1.5");
+    public SemanticVersioning.Version Version { get; init; } = new("0.2.0");
+    public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1.6");
     public string License { get; init; } = "All rights reserved";
     public bool HasPrepatcher { get; init; } = false;
     public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = [];
@@ -79,7 +79,7 @@ public sealed class K2Mod(CustomItemService customItems, TemplateTable templates
         foreach (var filter in slot.Properties!.Filters!)
             filter.Filter!.Add(new MongoId(WeaponId));
 
-        logger.Info("[K2] 시험용 무기 등록 완료 — HK416 임시 외형 / 피스키퍼 1레벨 / 500달러 / 750 RPM");
+        logger.Info("[K2] K2C3 시험용 무기 등록 완료 — 외형은 K2.Visual 플러그인 필요 / 피스키퍼 1레벨 / 500달러 / 750 RPM");
         return Task.CompletedTask;
     }
 }

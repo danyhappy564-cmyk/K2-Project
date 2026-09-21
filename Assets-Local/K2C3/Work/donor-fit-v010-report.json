@@ -1,0 +1,94 @@
+{
+  "mesh_count": 212,
+  "triangles": 12732,
+  "offset_weapon_local": [
+    0.00011564655869733542,
+    -0.30039161443710327,
+    0.0033830031752586365
+  ],
+  "samples": {
+    "1": {
+      "trigger_anchor": [
+        -0.18139491975307465,
+        1.3844499588012695,
+        0.36793097853660583
+      ],
+      "weapon_position": [
+        -0.20469996333122253,
+        1.3612020015716553,
+        0.06649323552846909
+      ],
+      "Base HumanLPalm": [
+        0.3245904743671417,
+        1.4635779857635498,
+        0.2760496735572815
+      ],
+      "Base HumanRPalm": [
+        -0.28400471806526184,
+        1.5361465215682983,
+        0.2322915643453598
+      ]
+    },
+    "23": {
+      "trigger_anchor": [
+        -0.1733134388923645,
+        1.4084725379943848,
+        0.4175035059452057
+      ],
+      "weapon_position": [
+        -0.1365778148174286,
+        1.3357778787612915,
+        0.12541742622852325
+      ],
+      "Base HumanLPalm": [
+        0.15890288352966309,
+        1.302798867225647,
+        0.20166032016277313
+      ],
+      "Base HumanRPalm": [
+        -0.29975757002830505,
+        1.5786876678466797,
+        0.24893800914287567
+      ]
+    },
+    "46": {
+      "trigger_anchor": [
+        -0.15670931339263916,
+        1.3725652694702148,
+        0.3178200125694275
+      ],
+      "weapon_position": [
+        -0.15682554244995117,
+        1.4139561653137207,
+        0.01742846891283989
+      ],
+      "Base HumanLPalm": [
+        0.2680080831050873,
+        1.669092059135437,
+        0.28556588292121887
+      ],
+      "Base HumanRPalm": [
+        -0.2628307342529297,
+        1.502758502960205,
+        0.16991525888442993
+      ]
+    }
+  },
+  "limits": "Trigger-anchor translation only. K2 moving parts neutral. No runtime IK, skin or full reload cycle.",
+  "source_file": "D:\\SPT Dev\\K2-Project\\Assets-Local\\K2C3\\Work\\K2C3-with-donor-reload-v009.blend",
+  "distance_diagnostics": {
+    "1": {
+      "right_palm_to_grip_centroid_m": 0.2683648765130533,
+      "left_palm_to_charge_bone_m": 0.5643660575545307
+    },
+    "23": {
+      "right_palm_to_grip_centroid_m": 0.2866403924141016,
+      "left_palm_to_charge_bone_m": 0.4710241109703979
+    },
+    "46": {
+      "right_palm_to_grip_centroid_m": 0.23730579423057654,
+      "left_palm_to_charge_bone_m": 0.5215980516611384
+    }
+  },
+  "distance_warning": "Centroid/anchor distances only, not surface contact errors. Runtime IK is absent."
+}

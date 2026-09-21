@@ -1,0 +1,23 @@
+{
+  "scale_factor": 0.12600956569807967,
+  "basis": "provisional barrel mesh extent 465mm",
+  "bounds_m": [
+    [
+      -0.035542022436857224,
+      -0.5889124870300293,
+      -0.14243103563785553
+    ],
+    [
+      0.02337605133652687,
+      0.3472759425640106,
+      0.07381244748830795
+    ]
+  ],
+  "max_transform_error": 1.209326926493865e-07,
+  "meshes": 212,
+  "bones": 4,
+  "expected_vertices": 13840,
+  "expected_polygons": 12732,
+  "fbx": "D:\\SPT Dev\\K2-Project\\Assets-Local\\K2C3\\Work\\K2C3-metric-draft-v006.fbx",
+  "eft_ready": false
+}
