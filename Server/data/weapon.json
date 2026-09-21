@@ -1,0 +1,32 @@
+{
+  "newItemName": "weapon_k2_prototype_556x45",
+  "handbookPriceRoubles": 50000,
+  "overrideProperties": {
+    "ExaminedByDefault": true,
+    "CanRequireOnRagfair": false,
+    "CanSellOnRagfair": false,
+    "bFirerate": 750
+  },
+  "handbookParentId": "5b5f78fc86f77409407a7f90",
+  "itemTplToClone": "5bb2475ed4351e00853264e3",
+  "parentId": "5447b5f14bdc2d61278b4567",
+  "locales": {
+    "en": {
+      "shortName": "K2C3 Test",
+      "name": "Daewoo K2C3 5.56x45 (Visual Test)",
+      "description": "K2C3 static visual test for SPT 4.1.6. Requires K2.Visual client plugin. Uses HK416 animations, attachment mechanics and aiming. Custom moving parts and sight alignment are unfinished. 750 RPM."
+    },
+    "kr": {
+      "shortName": "K2C3 시험용",
+      "name": "대우정밀 K2C3 5.56×45 (외형 시험)",
+      "description": "SPT 4.1.6용 K2C3 정적 외형 시험판. K2.Visual 클라이언트 플러그인이 필요합니다. 애니메이션·부품 동작·조준은 HK416 기반이며 전용 가동부와 조준 정렬은 미완성입니다. 연사속도 분당 750발."
+    },
+    "kr-en": {
+      "shortName": "K2C3 시험용",
+      "name": "대우정밀 K2C3 5.56×45 (외형 시험)",
+      "description": "SPT 4.1.6용 K2C3 정적 외형 시험판. K2.Visual 클라이언트 플러그인이 필요합니다. 애니메이션·부품 동작·조준은 HK416 기반이며 전용 가동부와 조준 정렬은 미완성입니다. 연사속도 분당 750발."
+    }
+  },
+  "fleaPriceRoubles": 50000,
+  "newId": "d21900000000000000000001"
+}

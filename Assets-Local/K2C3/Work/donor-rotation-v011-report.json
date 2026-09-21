@@ -1,0 +1,8 @@
+{
+  "rotation_order": "XYZ",
+  "frames": 46,
+  "right_palm_weapon_local_max_drift_m": 0.00041661792218940176,
+  "right_palm_to_original_marker_max_m": 0.0003589501226031454,
+  "previous_ZXY_drift_m": 0.21923157980665908,
+  "scope": "XYZ validated against original right-hand marker. Unity runtime comparison and K2 contact fitting still pending."
+}

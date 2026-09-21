@@ -1,0 +1,26 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Connection attempt to the License Client on channel: "LicenseClient-POWER ADE" failed because channel doesn't exist; code: "0x80000002"
+[Licensing::Module] Successfully launched the LicensingClient (PId: 31476)
+[Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-POWER ADE" at "2026-09-21T06:11:16.0811617Z"
+[Licensing::Client] Error: Code 10 while verifying Licensing Client signature (process Id: 31476, path: "D:/SPT Dev/02_Resources/Toolchain/Unity2022.3.43f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] Error: LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.15.5+a2f8afb
+  Session Id:              665beb75c8b94b2a8f40229df1d687c8
+  Correlation Id:          a5461c5b6afccbb76a3b11a8a8477a9c
+  External correlation Id: 8756102113732806119
+  Machine Id:              /B9ps7mUStyxEMSCYqyLZTlqW10=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-POWER ADE" (connect: 0.65s, validation: 0.05s, handshake: 0.13s)
+[Licensing::IpcConnector] Successfully connected to the License Notification on channel: "LicenseClient-POWER ADE-notifications" at "2026-09-21T06:11:16.2560155Z"
+[Licensing::Module] Connected to LicensingClient (PId: 31476, launch time: 0.03, total connection time: 0.83s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Error: Code 500 while processing request (status: Unable to update licenses. Errors: No ULF license found.,Token not found in cache)
+[Licensing::Client] Error: Code 500 while updating license in client (status: Unable to update licenses. Errors: No ULF license found.,Token not found in cache)
+Built from '2022.3/staging' branch; Version is '2022.3.43f1 (85497d293fa1) revision 8735101'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'ko' Physical Memory: 32693 MB
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Module] Error: 'com.unity.editor.headless' was not found.
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+No valid Unity Editor license found. Please activate your license.
+Exiting without the bug reporter. Application will terminate with return code 1

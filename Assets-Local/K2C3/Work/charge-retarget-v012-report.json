@@ -1,0 +1,437 @@
+{
+  "source": "m4a1_reload_charge_0",
+  "active_frames": [
+    14,
+    24
+  ],
+  "donor_travel_m": 0.10072126821796455,
+  "anchor_offset_weapon_local": [
+    -0.017456097528338432,
+    -0.16845357418060303,
+    -0.006409081630408764
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.1057274102908246e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 0.0
+    },
+    {
+      "frame": 2,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.2377834115800373e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.7122410492026533e-07
+    },
+    {
+      "frame": 3,
+      "weight": 0.0,
+      "wrist_target_error_m": 8.371548747362283e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.1865868317475023e-07
+    },
+    {
+      "frame": 4,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.316562074949763e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.5541650388392175e-07
+    },
+    {
+      "frame": 5,
+      "weight": 0.0,
+      "wrist_target_error_m": 2.0267770452403194e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 9.713029200048699e-08
+    },
+    {
+      "frame": 6,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.1944189326376765e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.6202068695144775e-07
+    },
+    {
+      "frame": 7,
+      "weight": 0.0,
+      "wrist_target_error_m": 2.7478908905252855e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.972203318287309e-07
+    },
+    {
+      "frame": 8,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.2293457984924316e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.2649884072254597e-07
+    },
+    {
+      "frame": 9,
+      "weight": 0.07407407407407407,
+      "wrist_target_error_m": 2.013122198123357e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 5.1053129410988637e-08
+    },
+    {
+      "frame": 10,
+      "weight": 0.25925925925925924,
+      "wrist_target_error_m": 7.337970883992392e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.5292985942293713e-07
+    },
+    {
+      "frame": 11,
+      "weight": 0.5,
+      "wrist_target_error_m": 1.3328003749250113e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.2907472356461298e-07
+    },
+    {
+      "frame": 12,
+      "weight": 0.7407407407407407,
+      "wrist_target_error_m": 1.1372817696983924e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.6694330584076555e-07
+    },
+    {
+      "frame": 13,
+      "weight": 0.925925925925926,
+      "wrist_target_error_m": 1.2377834115800373e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 7.254757767226714e-08
+    },
+    {
+      "frame": 14,
+      "weight": 1.0,
+      "wrist_target_error_m": 7.337970883992392e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.8463925127565427e-07
+    },
+    {
+      "frame": 15,
+      "weight": 1.0,
+      "wrist_target_error_m": 2.457562461863554e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.0431228596414002e-07
+    },
+    {
+      "frame": 16,
+      "weight": 1.0,
+      "wrist_target_error_m": 1.812804499357408e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.495405803780248e-07
+    },
+    {
+      "frame": 17,
+      "weight": 1.0,
+      "wrist_target_error_m": 2.9802322387695312e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.333887682508988e-07
+    },
+    {
+      "frame": 18,
+      "weight": 1.0,
+      "wrist_target_error_m": 1.6924465733171325e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.0688727151903192e-07
+    },
+    {
+      "frame": 19,
+      "weight": 1.0,
+      "wrist_target_error_m": 1.3348812510944096e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 3.258298278699797e-08
+    },
+    {
+      "frame": 20,
+      "weight": 1.0,
+      "wrist_target_error_m": 1.2013700229374393e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.3313591733001014e-07
+    },
+    {
+      "frame": 21,
+      "weight": 1.0,
+      "wrist_target_error_m": 3.948807716369629e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.6057899696334347e-07
+    },
+    {
+      "frame": 22,
+      "weight": 1.0,
+      "wrist_target_error_m": 3.332000937312528e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 9.367086709052442e-08
+    },
+    {
+      "frame": 23,
+      "weight": 1.0,
+      "wrist_target_error_m": 1.7265424469495516e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.2332525001905e-07
+    },
+    {
+      "frame": 24,
+      "weight": 1.0,
+      "wrist_target_error_m": 1.6924465733171325e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.9196034347587063e-07
+    },
+    {
+      "frame": 25,
+      "weight": 0.9446064139941691,
+      "wrist_target_error_m": 2.0891539592757751e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.5073622022707157e-07
+    },
+    {
+      "frame": 26,
+      "weight": 0.8017492711370262,
+      "wrist_target_error_m": 1.3140562194926493e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.0682911042111085e-07
+    },
+    {
+      "frame": 27,
+      "weight": 0.6064139941690961,
+      "wrist_target_error_m": 2.1875575834317185e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.862904378301032e-07
+    },
+    {
+      "frame": 28,
+      "weight": 0.39358600583090375,
+      "wrist_target_error_m": 2.2351741790771484e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 3.55790821762897e-07
+    },
+    {
+      "frame": 29,
+      "weight": 0.19825072886297376,
+      "wrist_target_error_m": 1.3743241686893043e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.3739454452626428e-07
+    },
+    {
+      "frame": 30,
+      "weight": 0.0553935860058309,
+      "wrist_target_error_m": 2.2429217731193258e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.4495460704223607e-07
+    },
+    {
+      "frame": 31,
+      "weight": 0.0,
+      "wrist_target_error_m": 2.5474013384101925e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 8.22574550909979e-08
+    },
+    {
+      "frame": 32,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.3374777936202467e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.9950528927633097e-07
+    },
+    {
+      "frame": 33,
+      "weight": 0.0,
+      "wrist_target_error_m": 9.541398640621973e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 8.660799218388401e-08
+    },
+    {
+      "frame": 34,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.2128666487410446e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 5.122274160385132e-08
+    },
+    {
+      "frame": 35,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.6924465733171325e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.3757434529971405e-07
+    },
+    {
+      "frame": 36,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.0745380149674383e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.2925267670495123e-07
+    },
+    {
+      "frame": 37,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.2013700229374393e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 2.3583801951446755e-07
+    },
+    {
+      "frame": 38,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.6118070224511577e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 6.889898977496356e-08
+    },
+    {
+      "frame": 39,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.9371509552001953e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 3.115089551857677e-07
+    },
+    {
+      "frame": 40,
+      "weight": 0.0,
+      "wrist_target_error_m": 2.669762502188819e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 4.384145995952122e-08
+    },
+    {
+      "frame": 41,
+      "weight": 0.0,
+      "wrist_target_error_m": 9.424321830774485e-08,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.3416218091077437e-07
+    },
+    {
+      "frame": 42,
+      "weight": 0.0,
+      "wrist_target_error_m": 3.129243850708008e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 7.992571050847526e-08
+    },
+    {
+      "frame": 43,
+      "weight": 0.0,
+      "wrist_target_error_m": 3.1680303253932744e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.6516999953063285e-07
+    },
+    {
+      "frame": 44,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.6924465733171325e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.7329858677395055e-07
+    },
+    {
+      "frame": 45,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.8431718463976653e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 1.9153798430519076e-07
+    },
+    {
+      "frame": 46,
+      "weight": 0.0,
+      "wrist_target_error_m": 1.3348812510944096e-07,
+      "reach_clamp_m": 0.0,
+      "shoulder_error_m": 4.53201124839352e-08,
+      "right_hand_error_m": 0.0,
+      "charge_transfer_error_m": 9.422941213754486e-08
+    }
+  ],
+  "max_wrist_target_error_m": 3.948807716369629e-07,
+  "limitation": "Preview: donor stroke, candidate bolt group, retained donor finger grip. K2 stroke, hand surface contact and Unity runtime not validated.",
+  "mesh_deformation_check": {
+    "FIT.K2C3_part_160": 0.10072085027739293,
+    "FIT.K2C3_part_159": 0.10072084879649666,
+    "FIT.K2C3_part_165": 0.10072085027739293
+  },
+  "mesh_count": 212
+}

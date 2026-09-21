@@ -1,0 +1,804 @@
+ModLoader: 총 87 개의 모드 불러오는 중...
+모드 Ammo Weight Modifier 버전 1.1.0 (GUID: ammo-weight-modifier | targets SPT: 
+~4.1.0) by LumurkFox 불러옴
+모드 CantedAiming 버전 2.0.0 (GUID: ca.bushtail.cantedaiming | targets SPT: 
+~4.1.0) by bushtail 불러옴
+모드 SlimmerMagazines 버전 2.0.0 (GUID: ca.bushtail.slimmermagazines | targets 
+SPT: ~4.1.0) by bushtail 불러옴
+모드 SpeciallyWeightless 버전 2.0.0 (GUID: ca.bushtail.speciallyweightless | 
+targets SPT: ~4.1.0) by bushtail 불러옴
+모드 LootNet 버전 1.1.2 (GUID: com.20fpsguy.LootNet | targets SPT: ~4.1.0) by 
+20fpsguy 불러옴
+모드 WeekendDrops 버전 1.0.6 (GUID: com.20fpsguy.WeekendDrops | targets SPT: 
+~4.1.0) by 20fpsguy 불러옴
+모드 Bosses Have Lega Medals 버전 2.1.0 (GUID: 
+com.acidphantasm.bosseshavelegamedals | targets SPT: ~4.1.0) by acidphantasm 
+불러옴
+모드 Bright Lasers 버전 3.0.0 (GUID: com.acidphantasm.brightlasers | targets 
+SPT: ~4.1.0) by acidphantasm 불러옴
+모드 Enable Labyrinth 버전 1.1.0 (GUID: com.acidphantasm.enablelabyrinth | 
+targets SPT: ~4.1.0) by acidphantasm 불러옴
+모드 Item Limits Begone 버전 1.1.0 (GUID: com.acidphantasm.itemlimitsbegone | 
+targets SPT: ~4.1.0) by acidphantasm 불러옴
+모드 Ref Friendly Quests 버전 2.1.0 (GUID: com.acidphantasm.reffriendlyquests | 
+targets SPT: ~4.1.0) by acidphantasm 불러옴
+모드 Remove Single Raid Quest Requirements 버전 1.1.0 (GUID: 
+com.acidphantasm.removesingleraidquestrequirement | targets SPT: ~4.1.0) by 
+acidphantasm 불러옴
+모드 Scorpion 버전 1.1.1 (GUID: com.acidphantasm.scorpion | targets SPT: ~4.1.0)
+by acidphantasm 불러옴
+모드 Simple Workout QTE 버전 2.2.2 (GUID: com.acidphantasm.simpleworkoutqte | 
+targets SPT: ~4.1.3) by acidphantasm 불러옴
+모드 StatTrack™ 버전 2.1.1 (GUID: com.acidphantasm.stattrack | targets SPT: 
+~4.1.0) by acidphantasm 불러옴
+모드 HolsterEverything 버전 2.0.0 (GUID: com.alanyung-yl.holstereverything | 
+targets SPT: ~4.1.0) by alanyung-yl 불러옴
+모드 MagTuning 버전 2.1.0 (GUID: com.amightytank.magtuning | targets SPT: 
+~4.1.1) by AMightyTank 불러옴
+모드 Black Division [REDACTED] Home 버전 1.3.2 (GUID: 
+com.blackdiv.tacticaltoaster | targets SPT: ~4.1.5) by TacticalToaster 불러옴
+모드 QuickSell 버전 3.4.0 (GUID: com.blackhawk.quicksell | targets SPT: ~4.1.3) 
+by BlackHawk 불러옴
+모드 Bluehead's AIO Trader 버전 5.3.0 (GUID: com.bluehead.aiotrader | targets 
+SPT: ~4.1.0) by Bluehead 불러옴
+모드 ClassicMovement 버전 1.1.3 (GUID: com.boogle.classicmovement | targets SPT:
+~4.1.0) by Boogle 불러옴
+모드 Borkel's Realistic Night Vision Goggles 버전 2.2.0 (GUID: 
+com.borkel.nvgmasks | targets SPT: ~4.1.0) by Borkel 불러옴
+모드 CNN-Containers 버전 5.0.0 (GUID: com.cannuccia.cnn-containers | targets 
+SPT: ~4.1.0) by Cannuccia 불러옴
+모드 ORBIT Server 버전 2.0.0 (GUID: com.chazut.orbit.server | targets SPT: 
+~4.1.0) by Chazut 불러옴
+모드 TraderModding 버전 2.1.2 (GUID: com.choochoo.tradermodding | targets SPT: 
+~4.1.X) by Choo² 불러옴
+모드 Cobra's Ammo Stack 버전 1.1.0 (GUID: com.cobra.ammostack | targets SPT: 
+~4.1.0) by Cobra 불러옴
+모드 Cobra's Durability Tweaks 버전 1.0.0 (GUID: com.cobra.durabilitytweaks | 
+targets SPT: ~4.1.0) by Cobra 불러옴
+모드 Artem 버전 3.0.2 (GUID: com.crackbone.artem-wtt | targets SPT: ~4.1.0) by 
+Crackbone 불러옴
+모드 LiveLikeBossSpawnChances 버전 2.2.0 (GUID: 
+com.danw.livelikebossspawnchances | targets SPT: ~4.1.0) by DanW 불러옴
+모드 BalancedMeds 버전 2.0.0 (GUID: com.deadwolf.spt.balancedmeds | targets SPT:
+~4.1.0) by DeadW0Lf 불러옴
+모드 UsefulFoodsAndDrinks 버전 2.0.0 (GUID: 
+com.deadwolf.spt.usefulfoodsanddrinks | targets SPT: ~4.1.0) by SPTarkov 불러옴
+모드 Epic's All In One 버전 5.0.1 (GUID: com.epicrangetime.aio | targets SPT: 
+~4.1.0) by EpicRangeTime 불러옴
+모드 FoldThatStock 버전 2.1.0 (GUID: com.foldthatstock | targets SPT: ~4.1.0) by
+alanyung-yl 불러옴
+모드 Health Per Level 버전 2.2.0 (GUID: com.fryciarz7.spt.hpl | targets SPT: 
+~4.1.0) by fryciarz7 불러옴
+모드 Geko's Better Progression 버전 3.0.0 (GUID: com.geko.gekosbetterprogression
+| targets SPT: ~4.1.0) by DrunkGeko 불러옴
+모드 Operator Traits 버전 1.2.0 (GUID: com.hysocs.operatortraits | targets SPT: 
+~4.1.0) by Hysocs 불러옴
+모드 K2C3 - Visual Test 버전 0.2.0 (GUID: com.k2project.server | targets SPT: 
+~4.1.6) by C33 / R_F 불러옴
+모드 kazusa-QuestConditionOverhaul 버전 1.1.0 (GUID: 
+com.kazusa.questconditionoverhaul | targets SPT: ~4.1.0) by kazusa 불러옴
+모드 Lacyway's PvE Tweaks 버전 1.3.1 (GUID: com.lacyway.lpt | targets SPT: 
+>=4.1.2) by Lacyway 불러옴
+모드 MergeConsumablesServer 버전 1.6.2 (GUID: com.lacyway.mc | targets SPT: 
+>=4.1.3) by Lacyway 불러옴
+모드 ECOTI 버전 3.0.3 (GUID: com.lennoxp90.coti.server | targets SPT: >=4.1.3 
+<4.2.0) by LennoxP90 불러옴
+모드 InterchangeRework 버전 1.1.0 (GUID: com.lennoxp90.interchangerework | 
+targets SPT: ~4.1.3) by LennoxP90 불러옴
+모드 ManimalLighthouseRework 버전 1.0.5 (GUID: com.manimal.lighthouse | targets 
+SPT: ~4.1.5) by Manimal 불러옴
+모드 ReceiveAllChats 버전 2.0.1 (GUID: com.maschine.ReceiveAllChats | targets 
+SPT: ~4.1.0) by maschine 불러옴
+모드 StartCollectorEarly 버전 1.5.1 (GUID: com.mattdokn.startcollectorearly | 
+targets SPT: ~4.1.0) by Mattdokn 불러옴
+모드 Progressive Flea Market 버전 2.0.0 (GUID: com.minesettimi.progressiveflea |
+targets SPT: ~4.1.0) by minesettimi 불러옴
+모드 MoreBotsAPI 버전 2.1.1 (GUID: com.morebotsapi.tacticaltoaster | targets 
+SPT: ~4.1.5) by TacticalToaster 불러옴
+모드 Dynamic Maps 버전 1.2.1 (GUID: com.mpstark.dynamicmaps | targets SPT: 
+~4.1.0) by mpstark 불러옴
+모드 LessRestrictingHeadwear 버전 3.1.0 (GUID: 
+com.musicmaniac.lessrestrictingheadwear | targets SPT: ~4.1.0) by MusicManiac 
+불러옴
+모드 Better Rear Sights 버전 1.8.0 (GUID: com.pein.betterrearsights | targets 
+SPT: ~4.1.0) by pein 불러옴
+모드 Recoil Rework 버전 2.0.0 (GUID: com.pein.camerarecoilmod | targets SPT: 
+~4.1.0) by pein 불러옴
+모드 AmmoStats 버전 4.1.0 (GUID: com.rairaitheraichu.ammostats | targets SPT: 
+~4.1.0) by RaiRaiTheRaichu 불러옴
+모드 Nocturne 버전 1.0.0 (GUID: com.rf.nocturne | targets SPT: ~4.1.5) by R_F 
+불러옴
+모드 GunsmithTweaks 버전 4.1.0 (GUID: com.rukiragaming.gunsmithtweaks | targets 
+SPT: ~4.1.0) by Ru_Kira 불러옴
+모드 ISB Aishi 버전 2.0.1 (GUID: com.samc137.aishi | targets SPT: ~4.1.0) by 
+SamC137 불러옴
+모드 ItemGen 버전 1.5.1 (GUID: com.serenity.itemgen | targets SPT: ~4.1.1) by 
+Serenity 불러옴
+모드 sgtlaggy's Quest Tweaks 버전 4.8.0 (GUID: com.sgtlaggy.questtweaks | 
+targets SPT: ~4.1.0) by sgtlaggy 불러옴
+모드 SPT-OperatorRegistry 버전 1.1.0 (GUID: com.shaneeexd.operatorregistry | 
+targets SPT: ~4.1.0) by ShaneeexD 불러옴
+모드 Barter Items Stacks 버전 1.4.3 (GUID: com.slpf.barteritemsstacks | targets 
+SPT: ~4.1.0) by SLPF 불러옴
+모드 Scavs 4 All 버전 2.1.0 (GUID: com.sp-tarkov.jonjetjon.scavs4all | targets 
+SPT: ~4.1.0) by jonjetjon 불러옴
+모드 ColoredTracers 버전 3.0.1 (GUID: com.szonszczyk.coloredtracers | targets 
+SPT: ~4.1.2) by Szonszczyk 불러옴
+모드 Change Helmet Visor 버전 3.0.0 (GUID: com.trinagan.ChangeHelmetVisor | 
+targets SPT: ~4.1.3) by Trinagan 불러옴
+모드 Hideout In Progress 버전 3.0.0 (GUID: com.tyfon.hideoutinprogress | targets
+SPT: ~4.1.0) by Tyfon 불러옴
+모드 UI Fixes 버전 6.0.2 (GUID: com.tyfon.uifixes | targets SPT: ~4.1.0) by 
+Tyfon 불러옴
+모드 Weapon Customizer 버전 4.0.0 (GUID: com.tyfon.weaponcustomizer | targets 
+SPT: ~4.1.0) by Tyfon 불러옴
+모드 Tactical Services Control 버전 1.3.13 (GUID: 
+com.tylevo.tacticalservicescontrol | targets SPT: ~4.1.5) by Tylevo 불러옴
+모드 QuestCodex 버전 0.1.0 (GUID: com.viper.questcodex | targets SPT: ~4.1.2) by
+Viper-9 불러옴
+모드 SptQuestLive 버전 1.0.1 (GUID: com.viper.sptquestlive | targets SPT: 
+~4.1.2) by Viper-9 불러옴
+모드 WTT-Armory 버전 2.0.5 (GUID: com.wtt.armory | targets SPT: ~4.1.0) by 
+GrooveypenguinX 불러옴
+모드 WTT-ServerCommonLib 버전 3.0.6 (GUID: com.wtt.commonlib | targets SPT: 
+~4.1.3) by GrooveypenguinX 불러옴
+모드 WTT-ContentBackport 버전 2.0.2 (GUID: com.wtt.contentbackport | targets 
+SPT: ~4.1.1) by GrooveypenguinX 불러옴
+모드 Eco-Attachment-Emporium 버전 3.0.0 (GUID: com.wtt.ecoattachmentemporium | 
+targets SPT: ~4.1.1) by Eco 불러옴
+모드 WTT-PackNStrapServer 버전 2.1.0 (GUID: com.wtt.packnstrap | targets SPT: 
+~4.1.1) by GrooveypenguinX 불러옴
+모드 Russian-SF-Pack 버전 2.0.0 (GUID: com.wtt.russiansfpack | targets SPT: 
+~4.1.5) by Eco 불러옴
+모드 Skill Distribution 버전 1.2.2 (GUID: com.zgfuedkx.skilldistribution | 
+targets SPT: ~4.1.0) by ZGFueDkx 불러옴
+모드 SkillMultiplier 버전 2.0.0 (GUID: dazzuh.skillmultiplier | targets SPT: 
+~4.1.5) by Dazzuh 불러옴
+모드 Black Exfil Revision 버전 1.1.0 (GUID: de.tosox.blackexfilrevision | 
+targets SPT: ~4.1.0) by Tosox 불러옴
+모드 EquipmentIsEternal 버전 1.2.0 (GUID: eu.thescrewcollab.equipmentiseternal |
+targets SPT: ~4.1.0) by ScrewTSW 불러옴
+모드 UnbreakableKeys 버전 1.3.0 (GUID: eu.thescrewcollab.unbreakablekeys | 
+targets SPT: ~4.1.0) by Toha3673 불러옴
+모드 SVM 버전 2.2.1 (GUID: fika.ghostfenixx.svm | targets SPT: ~4.1.0) by 
+GhostFenixx 불러옴
+모드 BackpackResizer 버전 1.0.2 (GUID: io.ragingbeardo.backpackresizer | targets
+SPT: ~4.1.3) by RagingBeardo 불러옴
+모드 Painter 버전 2.0.0 (GUID: jayoh99.painter.4.0 | targets SPT: ~4.1.5) by 
+MoxoPixel & Jayoh 불러옴
+모드 SAIN 버전 4.5.1 (GUID: me.sol.sain | targets SPT: ~4.1.3) by Solarint 
+불러옴
+모드 Army of Two 버전 0.9.10 (GUID: spt.senze.armyoftwo | targets SPT: ~4.1.5) 
+by SENZE 불러옴
+모드 Content Backport - Prestiges 버전 1.1.0 (GUID: 
+wtf.archangel.contentbackportprestiges | targets SPT: ~4.1) by ArchangelWTF 
+불러옴
+모드 Lots of Loot Redux 버전 4.2.2 (GUID: wtf.archangel.lotsoflootredux | 
+targets SPT: ~4.1) by ArchangelWTF 불러옴
+모드 Gilded Key Storage 버전 2.1.1 (GUID: xyz.drakia.gildedkeystorage | targets 
+SPT: ~4.1.0) by DrakiaXYZ 불러옴
+데이터베이스를 추출 중...
+데이터베이스 추출 완료
+Database import took 1284ms
+Mod Enable Labyrinth has a wwwroot, mapping to /acidphantasm-enablelabyrinth/
+Mod ECOTI has a wwwroot, mapping to /coti-assets/
+Mod QuestCodex has a wwwroot, mapping to /questcodex/
+Mod BackpackResizer has a wwwroot, mapping to /BackpackResizer/
+Mod SAIN has a wwwroot, mapping to /SAIN/
+Mod Lots of Loot Redux has a wwwroot, mapping to /LotsofLoot/
+서버: 시작 콜백을 실행합니다...
+┌─────────────────────────────────────┐
+│ SPT 4.1.6                           │
+│ https://discord.sp-tushonka.com     │
+│                                     │
+│ 이 소프트웨어는 무료입니다                      │
+│ 만약 금전적 대가를 지불하였다면, 사기에 당하신 겁니다.     │
+│ 상업적 용도는 제한됩니다                       │
+└─────────────────────────────────────┘
+[COTI] Item created, id 6a7f15387b68c336e18e8977
+[Bluehead's AioTrader]Config: enable_aiotrader enabled
+[Bluehead's AioTrader]Config: hide_all_builtin_inserts enabled
+Loaded Classic Movement config from: 
+F:\SP-Tushunka\SPT_Runtime\user\mods\ClassicMovementServer\Config\settings.jsonc
+[LiveLikeBossSpawnChances] Disabling SPT's weekly boss rotation...
+[AmmoStats] ColorConverterAPI Plugin detected?: True
+EquipmentIsEternal loaded
+  OnlyRestoreInsured: False
+  KeepQuestItems: False
+  RestoreArmBand: False
+  RestoreSpecialSlots: False
+  RestoreScabbard: False
+  RestoreSecuredContainer: False
+  DeduplicateItems: True
+
+==================================================
+CUSTOM ITEM CREATION ERRORS FOR MOD: Painter
+==================================================
+Created items: 175
+Creation failures: 1
+==================================================
+CREATION FAILURES:
+--------------------------------------------------
+[55d4887d4bdc2d962f8b4570] ItemId already exists. mag_stanag_colt_ar15_std_556x45_30
+==================================================
+
+[Painter] SPT 4.1.5 port loaded successfully.
+[K2] K2C3 시험용 무기 등록 완료 — 외형은 K2.Visual 플러그인 필요 / 피스키퍼 
+1레벨 / 500달러 / 750 RPM
+[ORBIT] Server config loaded 
+(F:\SP-Tushunka\SPT_Runtime\user\mods\ORBIT\config.json)
+[ORBIT] Server mod loaded - config UI at /orbit
+[Nocturne] SJ-0 «Nocturne» registered (10 effects, handbook 145,000₽, flea 
+145,000₽). Not in any loot table by design.
+[CNN-Containers] Mapbook: created 12 map cells.
+[CNN-Containers] Loaded successfully.
+[Lots of Loot Redux] Preset 'default' successfully loaded
+[QuestCodex] profile-change listener active (priority 1000), watching 
+/client/match/local/end and /client/game/profile/items/moving
+Unable to add bundle: 
+assets/content/items/mods/barrels/barrel_vpo215_600mm_366tkm.bundle
+TSC UH-60 Pilot portrait loaded for the trader and cargo contact.
+TSC UH-60 Pilot shop and cargo contact registered independently of the native 
+BTR Driver.
+TSC server config ready.
+TSC Dashboard ready: /tsc/admin
+TSC UH-60 transfer-fee journal ready.
+[Bluehead's AioTrader] AIOTraderCommando loaded — prefix: 'aio', commands: give
+[WeekendDrops] Global shop restock - all stock refilled
+  ╔══════════════════════════════════════════════╗
+  ║          W E E K E N D   D R O P S           ║
+  ║       loot crates and daily challenges       ║
+  ╚══════════════════════════════════════════════╝
+   weekend     closed, opens 금 오후 6:00 to 월 오전 4:00
+   modifier    none this weekend
+   challenges  8 per weekend, 18 difficulty points
+   content     6 bounties · 6 collection sets (24 items) · 12 arena crates
+   crate pool  35 of 35 optional items available (WTT-ContentBackport installed)
+[WeekendDrops] Ready
+[SM] Putting magazines on a diet...
+[SM] Slimmed down 47 magazines!
+[SCORPION] This loading message is sponsored by Raid: Shadow Legends
+[ItemGen] ====================================
+[ItemGen] ItemGen Framework v1.5.1 loading...
+[ItemGen] ====================================
+[ItemGen] Skipping disabled pack 'ExamplePack.json'
+[ItemGen] Loaded pack 'QM-Cases' from 'qm-cases.json' (0 quest items, 0 keys)
+[ItemGen] Found 1 item pack(s). Processing...
+[ItemGen] Loaded 0 quest item definition(s), 0 enabled.
+[ItemGen] Loaded 0 key definition(s), 0 enabled.
+[ItemGen] Loaded 1 container definition(s), 1 enabled.
+[ItemGen] Loaded 0 stim definition(s), 0 enabled.
+[ItemGen] Loaded 0 medkit definition(s), 0 enabled.
+[ItemGen] Loaded 0 food/drink definition(s), 0 enabled.
+[ItemGen] Loaded 0 barter item definition(s), 0 enabled.
+[ItemGen] Wrote 0 door-key mapping(s) to 
+F:\SP-Tushunka\SPT_Runtime\user\mods\ItemGen\doors.json
+[ItemGen] Patched 7 safe container filter(s) across all containers.
+[ItemGen] Added 1 trader entry/entries across all packs.
+[ItemGen] No items have loot injection enabled, skipping.
+[ItemGen] Added 0 crafting recipe(s).
+[ItemGen] ====================================
+[ItemGen] Done! Registered 0/0 custom quest item(s), 0/0 custom key(s), 1/1 
+custom container(s), 0/0 custom stim(s), 0/0 custom medkit(s), 0/0 custom 
+food/drink(s), 0/0 custom barter item(s), 1 trader entry/entries, 0 loot 
+injection(s), and 0 crafting recipe(s).
+[ItemGen] ====================================
+[COTI] Added to Peacekeeper LL4 at $2000, limit 3
+[Nocturne] sold by Therapist at LL3 for 145,000₽.
+[Geko's Better Progression-3.0.0] Running algorithmical rebalancing...
+[Geko's Better Progression-3.0.0] Applying secure container changes...
+[Geko's Better Progression-3.0.0] Applying stash progression changes...
+[Geko's Better Progression-3.0.0] Disabling flea market...
+[Geko's Better Progression-3.0.0] Applying changes to hideout build costs...
+[Geko's Better Progression-3.0.0] Applying changes to skills...
+[Geko's Better Progression-3.0.0] Applying changes to craft times and output 
+counts...
+[Geko's Better Progression-3.0.0] Applying changes to item prices...
+[Geko's Better Progression-3.0.0] Applying changes to SICC container...
+[Geko's Better Progression-3.0.0] Removing FiR requirements from quests...
+[Geko's Better Progression-3.0.0] Removing FiR requirements from repeatable 
+quests...
+[Geko's Better Progression-3.0.0] Removing FiR requirements from hideout 
+builds...
+[Geko's Better Progression-3.0.0] Removing FiR requirements from flea market 
+listings...
+[Geko's Better Progression-3.0.0] Adding custom items...
+[Geko's Better Progression-3.0.0] Adding custom trades...
+[Geko's Better Progression-3.0.0] Applying changes to bitcoin farming...
+[Geko's Better Progression-3.0.0] Setting initial trader standing...
+[Geko's Better Progression-3.0.0] Applying changes to Ref item purchasing...
+[Geko's Better Progression-3.0.0] Adding additional quest rewards...
+[Geko's Better Progression-3.0.0] Applying changes to container sizes...
+Geko's Better Progression finished loading!
+[38;2;200;80;220m[ISB Aishi Loaded] “Do you think the Black Division will negotiate? Join us, and 
+let’s show them our bargaining chip.”[0m
+[Bluehead's AioTrader]Total 7568 items loaded
+[AIOTrader] Assort ready: 7917 listings (349 default presets)
+[SVM] Advanced Section is enabled, loads pre-init to affect handbook
+[SVM] Custom Properties is loading
+[SVM] Parent IIC: 5448bc234bdc2d3c308b4569:Ergonomics:+:100
+[SVM] Parent IIC: 5448bc234bdc2d3c308b4569:CheckTimeModifier:5
+[SVM] Parent IIC: 5448bc234bdc2d3c308b4569:LoadUnloadModifier:0
+[SVM] Parent IIC: 5448bc234bdc2d3c308b4569:Accuracy:+:15
+[SVM] Parent IIC: 5448bc234bdc2d3c308b4569:Recoil:-:10
+[SVM] Parent IIC: 550aa4cd4bdc2dd8348b456c:Loudness:-:50
+[SVM] Parent IIC: 55818a594bdc2db9688b456a:Ergonomics:+:100
+[SVM] Parent IIC: 55818a594bdc2db9688b456a:Recoil:-:10
+[SVM] Parent IIC: 55818a594bdc2db9688b456a:Accuracy:+:15
+[SVM] Parent IIC: 55818af64bdc2d5b648b4570:Ergonomics:+:100
+[SVM] Parent IIC: 55818af64bdc2d5b648b4570:Recoil:-:10
+[SVM] Parent IIC: 55818a594bdc2db9688b456a:Accuracy:+:15
+[SVM] Parent IIC: 550aa4cd4bdc2dd8348b456c:Ergonomics:100
+[SVM] Parent IIC: 5485a8684bdc2da71d8b4567:DurabilityBurnModificator:0
+[SVM] Default IIC: c544b1b34703aebab8ee0e5c:MaxDurability:300
+[SVM] Default IIC: c544b1b34703aebab8ee0e5c:Durability:300
+[SVM] Default IIC: c544b1b34703aebab8ee0e5c:armorClass:6
+[SVM] Default IIC: c544b1b34703aebab8ee0e5c:ArmorType:Heavy
+[SVM] Default IIC: c544b1b34703aebab8ee0e5c:ArmorMaterial:Titan
+[SVM] Default IIC: 
+c544b1b34703aebab8ee0e5c:armorColliders:[HeadCommon,BackHead,Ears,NeckBack,Parie
+talHead,Eyes,Jaw]
+[SVM] Default IIC: 6a6cd6298ca3e7453cc71848:Cartridges:0:_max_count:300
+[SVM] Custom properties successfully loaded
+Unable to randomise armor items 6a4543c3f4d5564b34873434 Left_side_plate slot as
+it cannot be found, skipping
+Unable to randomise armor items 672e2e755afaba52a4af5e45 Back_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e7531ffa75ea676c3ea Front_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e7531ffa75ea676c3ea Back_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e758c2bcbf1b2421359 front_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e755afaba52a4af5e45 Front_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e75dbf780f902fd6d68 right_side_plate slot 
+as it cannot be found, skipping
+Unable to randomise armor items 672e2e75dbf780f902fd6d68 left_side_plate slot as
+it cannot be found, skipping
+플리마켓 상품 생성 중
+[Ammo Weight Modifier] Modified 504 ammo items to 0% weight
+[MagTuning] Successfully applied modifications to all magazines (except 
+cylinders)
+[Lacyway's PvE Tweaks] Successfully loaded!
+Ref: False, Transits: False, Recipes: False, Labyrinth: False, QuestsTweaks: 
+False, AddRecipes: False, Remove Map Limits: False, TweakExtracts: False, 
+HideoutCustomizations: False, TweakASVal: False
+MergeConsumables loaded!
+Successfully loaded Better Rear Sights! Good luck!
+WeaponCustomizer loaded 1 customized weapons and 0 customized presets
+HolsterEverything: Applied holster category config. Added 1 new whitelist entry.
+Configured categories: Weapon (5422acb9af1c889c16000029).
+[BalancedMeds] Loading BalancedMeds Mod Completed. with 23 updates
+[UsefulFoodsAndDrinks] Initalizing...
+[UsefulFoodsAndDrinks] Updated 42 Foods/Drinks...
+[UsefulFoodsAndDrinks] Loading UsefulFoodsAndDrinks Mod Is Completed.
+FoldThatStock: Applied 19 weapon patch(es), 24 stock patch(es), and 53 fold 
+compatibility patch(es).
+[Start Collector Early] Loaded in 16ms
+[ProgressiveFlea] Successfully initialized.
+[SAIN] Registered modded bot type 'Black Division Lead' (848420).
+[SAIN] Registered modded bot type 'Black Division Assault' (848421).
+[SAIN] Registered modded bot type 'Black Division Breacher' (848422).
+[SAIN] Registered modded bot type 'Black Division Support' (848423).
+[SAIN] Registered modded bot type 'Wedge' (848424).
+[SAIN] Registered modded bot type 'Black Division Raider' (848426).
+[SAIN] Registered modded bot type 'Rook' (658400).
+[SAIN] Registered modded bot type 'Tombstone' (658401).
+[LessRestrictingHeadwear] Patched 434 items!
+Successfully loaded Recoil Rework! Loaded custom weapon data for 23 weapons. 
+Fuck vanilla recoil.
+[Gunsmith Tweaks] Applying Gunsmith tweaks…
+[Gunsmith Tweaks] Lore accurate rewards enabled.
+[OperatorRegistry] Initialising...
+[OperatorRegistry] Config loaded (enabled=True, chance=1, 
+cacheUrl=http://144.21.60.21/operators).
+[OperatorRegistry] Loaded installation UUID: 69b38c3811554a4ba54418b6406e98aa
+[OperatorRegistry] Firebase anonymous auth ready (uid: 
+V9bEZNJmirdo422G7csmw2tEsTu2).
+[OperatorRegistry] Loaded local cache: 277 operators.
+[OperatorRegistry] Loaded successfully. Community operators will appear on PMC 
+bots in raids.
+[QuestCodex] v0.1.0 loaded. Web UI: /questcodex
+[SkillMultiplier] Configs Edited Successfully, new values: crafting exp amount: 
+18.75, SkillPointsPerCraft: 3, SkillPointsPerAreaUpgrade: 45
+[Black Exfil Revision] Black Exfil can now attach face shields
+[UnbreakableKeys] Modified 240 keys and 39 keycards
+[WARNING] Backpack Resizer: '6Sh118 raid backpack' has no discovered grid 
+template (its items may no longer exist), skipping it.
+[WARNING] Backpack Resizer: 'Mystery Ranch Blackjack 50 backpack' has no 
+discovered grid template (its items may no longer exist), skipping it.
+[WARNING] Backpack Resizer: 'LBT-1476A 3Day Pack' has no discovered grid 
+template (its items may no longer exist), skipping it.
+[WARNING] Backpack Resizer: 'Tasmanian Tiger Trooper 35 backpack' has no 
+discovered grid template (its items may no longer exist), skipping it.
+[WARNING] Backpack Resizer: 'Atlas ' Satchel' has no discovered grid template 
+(its items may no longer exist), skipping it.
+[SUCCESS] Backpack Resizer: applied 57 storage grid(s).
+[ColoredTracers/OnLoadAsync] Added 250 tracers to 250 bullets!
+[SVM] Remove backpack restrictions - empty filters detected on ID - 
+656ddcf0f02d7bcea90bf395 - Ignoring; Not an error, don't report it
+[SVM] Remove backpack restrictions - empty filters detected on ID - 
+656ddcf0f02d7bcea90bf395 - Ignoring; Not an error, don't report it
+[SVM] Remove backpack restrictions - empty filters detected on ID - 
+656ddcf0f02d7bcea90bf395 - Ignoring; Not an error, don't report it
+[OperatorRegistry] Cache refreshed: 281 operators (updated=1789971903).
+[SVM] Initialization complete. You're finally awake, you were trying to play 
+like a chad right?
+
+[SVM] Preset - C33 - successfully loaded
+[SAIN] Generated 6 default presets
+[COTI] 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\[wtt-contentba
+ckport]_(nvg_l3_gpnvg-18_anvis).json: host 689b889473ebd6871805edd6 is covered 
+by 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\com.wtt.conten
+tbackport_pvs31a.json, which is tuned - this auto-generated stub is superseded 
+and can be deleted.
+[COTI] Device store: 11 device(s) resolved, covering 11 host(s), from 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat
+[COTI] mod_coti added to PVS-31A (689b889473ebd6871805edd6)
+[COTI] mod_coti added to GPNVG-18 (5c0558060db834001b735271)
+[COTI] mod_coti added to N-15 (5c066e3a0db834001b7353f0)
+[COTI] mod_coti added to PNV-10T (5c0696830db834001d23f5da)
+[COTI] mod_coti added to PNV-57E (67506ca81f18589016006aa6)
+[COTI] mod_coti added to PVS-14 (57235b6f24597759bf5a30f1)
+[COTI] mod_coti added to [Aishi]_(Modified L3Harris GPNVG-18 night vision 
+goggles (Black)) (694b2e29274ab9b2a319b6ed)
+[COTI] mod_coti added to [Aishi]_(Modified L3Harris PVS-31A night vision goggles
+(FDE)) (6a4c74f853926ec162d22a43)
+[COTI] mod_coti added to [Aishi]_(Modified L3Harris PVS-31A night vision goggles
+(Green Phosphor)) (6a4c716dcbf243af9349bafd)
+[COTI] mod_coti added to [Aishi]_(Modified L3Harris PVS-31A night vision goggles
+(White)) (6a4c7475199066d1ea0b5131)
+[COTI] mod_coti added to [Painter]_(L3Harris GPNVG-18 night vision goggles 
+(Black)) (6782e59050893b2c1e2cabc8)
+[COTI] 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\[wtt-contentba
+ckport]_(nvg_l3_gpnvg-18_anvis).json: host 689b889473ebd6871805edd6 is covered 
+by 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\com.wtt.conten
+tbackport_pvs31a.json, which is tuned - this auto-generated stub is superseded 
+and can be deleted.
+[COTI] Device store: 12 device(s) resolved, covering 12 host(s), from 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat
+[COTI] mod_coti added to [WTT-Artem]_(GPNVG-18 Night Vision goggles (White)) 
+(66326bfd46817c660d01512e)
+[COTI] Discovered [wtt-artem]_(gpnvg-18_night_vision_goggles_(white)) 
+(66326bfd46817c660d01512e), family Anvis - seeded from tuned device 
+"vanilla_gpnvg"
+[COTI] 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\[wtt-contentba
+ckport]_(nvg_l3_gpnvg-18_anvis).json: host 689b889473ebd6871805edd6 is covered 
+by 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\com.wtt.conten
+tbackport_pvs31a.json, which is tuned - this auto-generated stub is superseded 
+and can be deleted.
+[COTI] Device store: 13 device(s) resolved, covering 13 host(s), from 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat
+[COTI] mod_coti added to [WTT-Artem]_(GPNVG-18 Night Vision goggles (OD)) 
+(66326bfd46817c660d015148)
+[COTI] Discovered [wtt-artem]_(gpnvg-18_night_vision_goggles_(od)) 
+(66326bfd46817c660d015148), family Anvis - seeded from tuned device 
+"vanilla_gpnvg"
+[COTI] 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\[wtt-contentba
+ckport]_(nvg_l3_gpnvg-18_anvis).json: host 689b889473ebd6871805edd6 is covered 
+by 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\com.wtt.conten
+tbackport_pvs31a.json, which is tuned - this auto-generated stub is superseded 
+and can be deleted.
+[COTI] Device store: 14 device(s) resolved, covering 14 host(s), from 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat
+[COTI] mod_coti added to [WTT-Artem]_(GPNVG-18 Night Vision goggles (Black)) 
+(66326bfd46817c660d015146)
+[COTI] Discovered [wtt-artem]_(gpnvg-18_night_vision_goggles_(black)) 
+(66326bfd46817c660d015146), family Anvis - seeded from tuned device 
+"vanilla_gpnvg"
+[COTI] 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\[wtt-contentba
+ckport]_(nvg_l3_gpnvg-18_anvis).json: host 689b889473ebd6871805edd6 is covered 
+by 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\com.wtt.conten
+tbackport_pvs31a.json, which is tuned - this auto-generated stub is superseded 
+and can be deleted.
+[COTI] Device store: 15 device(s) resolved, covering 15 host(s), from 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat
+[COTI] mod_coti added to [WTT-Artem]_(PVS-31) (67548853f1ba8ca2b34fa4d0)
+[COTI] Discovered [wtt-artem]_(pvs-31) (67548853f1ba8ca2b34fa4d0), family 
+Binocular - seeded from tuned device "com.wtt.contentbackport_pvs31a"
+[COTI] 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\[wtt-contentba
+ckport]_(nvg_l3_gpnvg-18_anvis).json: host 689b889473ebd6871805edd6 is covered 
+by 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat\com.wtt.conten
+tbackport_pvs31a.json, which is tuned - this auto-generated stub is superseded 
+and can be deleted.
+[COTI] Device store: 16 device(s) resolved, covering 16 host(s), from 
+F:\SP-Tushunka\SPT_Runtime\user\mods\LennoxP90-COTI\nvghostcompat
+[COTI] mod_coti added to [WTT-Artem]_(PVS-31 (Wide)) (6754946b62f4db9c0404bd2b)
+[COTI] Discovered [wtt-artem]_(pvs-31_(wide)) (6754946b62f4db9c0404bd2b), family
+Binocular - seeded from tuned device "com.wtt.contentbackport_pvs31a"
+[COTI] Auto-discovery: 5 new night vision host(s) stubbed.
+[COTI] Slot name registered in 17 locale(s)
+[COTI] Loot spawns registered against 16 night vision template(s) at 25% of 
+their weight
+[COTI] mesh: converting '66326bfd46817c660d015146' from artemgpnvgblack.bundle
+[COTI] mesh: converting '66326bfd46817c660d015148' from artemgpnvgod.bundle
+[COTI] mesh: converting '66326bfd46817c660d01512e' from artemgpnvgwhite.bundle
+[COTI] mesh: converting '67548853f1ba8ca2b34fa4d0' from artem_pvs31.bundle
+[COTI] mesh: converting '6754946b62f4db9c0404bd2b' from artem_pvs31_wide.bundle
+[COTI] meshes: 5 converted, 6 unchanged, 0 removed, 0 failed
+[IR] reworked Interchange dataset ready: 278 spawn point(s), 6 exit(s) + 1 
+secret, 906 container(s), 2 mounted weapon(s)
+[38;2;200;80;220m[ISB Aishi KCs Loaded] “Permissions granted. All operators’ credentials are back online.”[0m
+[Change Helmet Visor] Initialising changes...
+[Change Helmet Visor] Changed the visor of all face shields to 'Wide'
+Removed single raid completion requirement from 167 quests
+[BarterItemsStacks] Config loaded.
+Scavs4All: Searching quest DB
+Scavs4All: finished searching quest DB!
+--------------------------------------------
+Found a total of 846 quests
+Modified a total of 140 quests
+Modified 41 scav kill quests
+Modified 99 PMC kill quests
+Did not scale PMC kill quests
+--------------------------------------------
+Army of Two: configured Rook and Tombstone on 'bigmap' across 1 zone(s) with a 
+15% spawn chance.
+Army of Two: configured Rook and Tombstone on 'lighthouse' across 13 zone(s) 
+with a 15% spawn chance.
+Army of Two: configured Rook and Tombstone on 'rezervbase' across 1 zone(s) with
+a 15% spawn chance.
+Army of Two: configured Rook and Tombstone on 'shoreline' across 4 zone(s) with 
+a 15% spawn chance.
+Army of Two: Operations Board available at http://127.0.0.1:6971/
+Web authentication is enabled.
+[Cobra's Ammo Stack] v1.1.0 loaded. Modified 262 ammunition items.
+[Cobra's Durability Tweaks] v1.0.0 loaded. Modified 365 weapons. Durability 
+burn: disabled. Weapon malfunctions: disabled on 579 item templates.
+[kazusa-QuestConditionOverhaul] Dogtag check: 49/49 configured dogtag IDs exist 
+as real items.
+[kazusa-QuestConditionOverhaul] 2 dogtag item(s) exist in the database but are 
+NOT in your config list - they will never be accepted for hand-in. Add them to 
+usecTemplateIds/bearTemplateIds: 6963dede566c81e5c5dc9b4a ([Aishi]_(USEC dogtag 
+with unique markings)), 6966abf2e6001880baf0ada0 ([Aishi]_(USEC dogtag with 
+unique markings))
+[kazusa-QuestConditionOverhaul] Finish-only generated pass completed. Replaced 
+AvailableForFinish on 146 quests.
+시작된 웹서버 https://127.0.0.1:6969
+시작된 웹소켓 서버 wss://127.0.0.1:6969
+서버가 시작되었습니다, 즐거운 시간 되세요.
+Loaded self-signed certificate (user\certs\server.crt)
+[클라이언트 요청] /client/items
+[클라이언트 요청] /client/globals
+[클라이언트 요청] /launcher/v2/ping
+[클라이언트 요청] /launcher/v2/profiles
+[클라이언트 요청] /launcher/v2/types
+[클라이언트 요청] /launcher/v2/mod-pages
+[클라이언트 요청] /launcher/v2/login
+[클라이언트 요청] /launcher/v2/version
+[클라이언트 요청] /singleplayer/bundles
+[클라이언트 요청] /singleplayer/customEnumEntries
+[클라이언트 요청] /lootnet/prices
+[클라이언트 요청] /sain/config
+[웹소켓 리퀘스트] /sain/websocket/
+[SAIN] Preset sync socket connected for session websocket.
+[클라이언트 요청] /sain/presets/custom/list
+[클라이언트 요청] /sain/presets/custom/get
+[클라이언트 요청] /sain/presets/defaults
+[클라이언트 요청] /sain/namepersonalities
+[클라이언트 요청] /sain/data/get
+[클라이언트 요청] /sain/bottypes/exclusions
+[클라이언트 요청] /sain/bottypes/list
+[클라이언트 요청] /quicksell/getFleaPrices
+[클라이언트 요청] /ClassicMovement/GetConfig
+[QuickSell] Built flea price table: 7419 items in 9ms.
+[클라이언트 요청] /singleplayer/bosstypes
+[클라이언트 요청] /coti/hosts
+[웹소켓 리퀘스트] /coti/ws/6a85a5cac898bb3afc51e017
+[클라이언트 요청] /singleplayer/bundles
+[클라이언트 요청] /wttcommonlib/recipes/extended/get
+[클라이언트 요청] /wttcommonlib/parents/custom/get
+[클라이언트 요청] /skill-distribution/config
+[클라이언트 요청] /server-config-router/skillsconfig
+[클라이언트 요청] /server-config-router/skillsconfig
+[클라이언트 요청] /server-config-router/skillsconfig
+[클라이언트 요청] /server-config-router/skillsconfig
+[클라이언트 요청] /server-config-router/skillsconfig
+[클라이언트 요청] /server-config-router/skillpoints
+[클라이언트 요청] /server-config-router/skillpoints
+[클라이언트 요청] /server-config-router/skillpoints
+[클라이언트 요청] /server-config-router/skillpoints
+[클라이언트 요청] /singleplayer/settings/version
+[클라이언트 요청] /singleplayer/release
+[클라이언트 요청] /singleplayer/enableBSGlogging
+[클라이언트 요청] /singleplayer/moddedTraders
+[클라이언트 요청] /sain/presets/custom/list
+[클라이언트 요청] /sain/presets/custom/get
+[클라이언트 요청] /wttcommonlib/voices/get
+[클라이언트 요청] /wttcommonlib/slotimages/get
+[클라이언트 요청] /wttcommonlib/riglayouts/get
+[클라이언트 요청] /wttcommonlib/audio/manifest/get
+[클라이언트 요청] /wttcommonlib/hideout/icons/manifest
+[클라이언트 요청] /wttcommonlib/hideout/marktextures/manifest
+[클라이언트 요청] /wttcommonlib/spawnsystem/configs/get
+[클라이언트 요청] /weekenddrops/clientflags
+[클라이언트 요청] /weekenddrops/state
+[클라이언트 요청] /weekenddrops/dailystate
+[클라이언트 요청] /weekenddrops/contracts
+[WeekendDrops] Daily reset for 6a85a5cac898bb3afc51e017 - assigned 5 challenges
+[클라이언트 요청] /weekenddrops/records
+[클라이언트 요청] /operator-traits/load
+[클라이언트 요청] /client/handbook/templates
+[클라이언트 요청] /orbit/config
+[클라이언트 요청] /orbit/zones
+[클라이언트 요청] /dynamicmaps/load
+[클라이언트 요청] /singleplayer/settings/version
+[클라이언트 요청] /client/menu/locale/kr
+[클라이언트 요청] /client/game/mode
+[클라이언트 요청] /client/game/start
+[LiveLikeBossSpawnChances] Scaling boss spawn chances to 46% of their default 
+spawn chances
+[HealthPerLevel] Modifying health for profile: LastRound
+[HealthPerLevel] Game started, health adjusted.
+[클라이언트 요청] /singleplayer/clientmods
+[클라이언트 요청] /client/game/version/validate
+[클라이언트 요청] /client/languages
+[클라이언트 요청] /client/game/config
+[클라이언트 요청] /client/items
+[클라이언트 요청] /client/customization
+[클라이언트 요청] /client/globals
+[클라이언트 요청] /client/prestige/list
+[클라이언트 요청] /client/trading/api/traderSettings
+[클라이언트 요청] /client/settings
+[클라이언트 요청] /client/customization/storage
+[클라이언트 요청] /client/game/profile/list
+[클라이언트 요청] /client/dialogue
+[OperatorRegistry] Registered operator 'C33' (L39) to RTDB.
+[클라이언트 요청] /client/game/profile/select
+[HealthPerLevel] Modifying health for profile: LastRound
+[클라이언트 요청] /client/profile/status
+[클라이언트 요청] /client/handbook/templates
+[클라이언트 요청] /client/builds/list
+[클라이언트 요청] /stattrack/load
+[클라이언트 요청] /weaponcustomizer/load
+[클라이언트 요청] /client/notifier/channel/create
+[클라이언트 요청] /client/weather
+[클라이언트 요청] /client/locale/kr
+[클라이언트 요청] /client/locations
+[클라이언트 요청] /client/profile/status
+[웹소켓 리퀘스트] /notifierServer/getwebsocket/6a85a5cac898bb3afc51e017
+[WS] Player: LastRound (6a85a5cac898bb3afc51e017) 20260921062954980 가 
+접속하였습니다
+[클라이언트 요청] /client/hideout/areas
+[클라이언트 요청] /client/hideout/qte/list
+[클라이언트 요청] /client/hideout/settings
+[클라이언트 요청] /client/hideout/production/recipes
+[클라이언트 요청] /client/hideout/customization/offer/list
+[클라이언트 요청] /client/server/list
+[클라이언트 요청] /client/friend/list
+[클라이언트 요청] /client/mail/dialog/list
+[클라이언트 요청] /client/friend/request/list/inbox
+[클라이언트 요청] /client/friend/request/list/outbox
+[클라이언트 요청] /client/quest/list
+[클라이언트 요청] /client/match/group/current
+[클라이언트 요청] /client/achievement/statistic
+[클라이언트 요청] /client/achievement/list
+[클라이언트 요청] /client/repeatalbeQuests/activityPeriods
+[클라이언트 요청] /client/survey
+[클라이언트 요청] /hip/load
+[클라이언트 요청] /files/trader/avatar/66bf757f27d0b097db0acea5.jpg
+[클라이언트 요청] /client/checkVersion
+[클라이언트 요청] /client/items/prices/54cb50c76803fa8b248b4571
+[클라이언트 요청] /client/items/prices/5935c25fb3acc3127c3d8cd9
+[클라이언트 요청] /client/items/prices/58330581ace78e27b8b10cee
+[클라이언트 요청] /client/trading/api/getTraderAssort/5935c25fb3acc3127c3d8cd9
+[클라이언트 요청] /client/trading/api/getTraderAssort/54cb50c76803fa8b248b4571
+[클라이언트 요청] /client/trading/api/getTraderAssort/58330581ace78e27b8b10cee
+[클라이언트 요청] /client/trading/api/getTraderAssort/58330581ace78e27b8b10cee
+[클라이언트 요청] /client/items/prices/5a7c2eca46aef81a7ca2145d
+[클라이언트 요청] /client/trading/api/getTraderAssort/5935c25fb3acc3127c3d8cd9
+[클라이언트 요청] /client/items/prices/66bf757f27d0b097db0acea5
+[클라이언트 요청] /client/items/prices/66f51f3a0000000000000a60
+[클라이언트 요청] /client/items/prices/68f98298939080194f060927
+[클라이언트 요청] /client/items/prices/690766de550bc322a810ea1e
+[클라이언트 요청] /client/items/prices/bd3a8b28356d9c6509966546
+[클라이언트 요청] /client/items/prices/668aaff35fd574b6dcc4a686
+[클라이언트 요청] /client/items/prices/5c0647fdd443bc2504c2d371
+[클라이언트 요청] /client/items/prices/5ac3b934156ae10c4430e83c
+[클라이언트 요청] /client/items/prices/54cb57776803fa99248b456e
+[클라이언트 요청] /client/items/prices/579dc571d53a0658a154fbec
+[클라이언트 요청] /client/items/prices/6617beeaa9cfa777ca915b7c
+[클라이언트 요청] /client/trading/api/getTraderAssort/54cb50c76803fa8b248b4571
+[클라이언트 요청] /client/items/prices/6688d464bc40c867f60e7d7e
+[클라이언트 요청] /weekenddrops/clientflags
+[클라이언트 요청] /weekenddrops/state
+[클라이언트 요청] /weekenddrops/contracts
+[클라이언트 요청] /weekenddrops/dailystate
+[클라이언트 요청] /weekenddrops/records
+[클라이언트 요청] /client/trading/api/getTraderAssort/5ac3b934156ae10c4430e83c
+[클라이언트 요청] /client/trading/api/getTraderAssort/5a7c2eca46aef81a7ca2145d
+[클라이언트 요청] /client/trading/api/getTraderAssort/5935c25fb3acc3127c3d8cd9
+[클라이언트 요청] /client/trading/api/getTraderAssort/58330581ace78e27b8b10cee
+[클라이언트 요청] /weekenddrops/clientflags
+[클라이언트 요청] /weekenddrops/state
+[클라이언트 요청] /weekenddrops/dailystate
+[클라이언트 요청] /weekenddrops/records
+[클라이언트 요청] /weekenddrops/contracts
+Unable to randomise armor items 672e2e755afaba52a4af5e45 Front_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e755afaba52a4af5e45 Front_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e75be2ea9998a388b8b Left_side_plate slot as
+it cannot be found, skipping
+Unable to randomise armor items 672e2e755afaba52a4af5e45 Front_plate slot as it 
+cannot be found, skipping
+Unable to randomise armor items 672e2e755afaba52a4af5e45 Back_plate slot as it 
+cannot be found, skipping
+[클라이언트 요청] /client/game/profile/items/moving
+[클라이언트 요청] /client/trading/api/getTraderAssort/5935c25fb3acc3127c3d8cd9
+[클라이언트 요청] /operator-traits/load
+[클라이언트 요청] /weekenddrops/clientflags
+[클라이언트 요청] /weekenddrops/state
+[클라이언트 요청] /weekenddrops/contracts
+[클라이언트 요청] /weekenddrops/dailystate
+[클라이언트 요청] /weekenddrops/records
+[클라이언트 요청] /client/trading/api/getTraderAssort/58330581ace78e27b8b10cee
+[클라이언트 요청] /client/game/profile/items/moving
+[클라이언트 요청] /client/ragfair/find
+[클라이언트 요청] /uifixes/assortUnlocks
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd382e30db2828dee1f! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd382e30db2828dee1f! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd382e30db2828dee1f! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd3228ae8e73f55e317! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd3228ae8e73f55e317! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd3228ae8e73f55e317! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd9a0f157df28e42320! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd94fda0fe97e6fce2d! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd94fda0fe97e6fce2d! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd93b7a02416be7b402! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcd93b7a02416be7b402! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcdc74bbd8efd2740532! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcdc74bbd8efd2740532! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcdc8f9d5e854a8c7c46! Check that whatever mod added that trader and/or quest
+is installed correctly.
+UIFixes: Trader 690766de550bc322a810ea1e questassort references unknown quest 
+677fdcdc8f9d5e854a8c7c46! Check that whatever mod added that trader and/or quest
+is installed correctly.
+[클라이언트 요청] /client/ragfair/find
+[클라이언트 요청] /client/game/profile/items/moving
+[클라이언트 요청] /client/game/profile/items/moving
+[클라이언트 요청] /client/match/group/invite/cancel-all
+[클라이언트 요청] /client/game/logout
+[WS] player: LastRound (6a85a5cac898bb3afc51e017) 20260921062954980 has 
+disconnected
+[클라이언트 요청] /launcher/v2/profiles

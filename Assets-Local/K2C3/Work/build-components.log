@@ -1,0 +1,15 @@
+Extensions: writing cache failed ([WinError 5] 액세스가 거부되었습니다: 'C:\\Users\\pc\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions').
+22:28:51 | INFO: Data are loaded, start creating Blender stuff
+22:28:51 | INFO: Blender create Mesh node Object001_02 - Default_0
+22:28:51 | INFO: Blender create Mesh node Body_09 - Default_0
+22:28:51 | INFO: glTF import finished in 0.12s
+D:\SPT Dev\K2-Project\Blender\build_components.py:80: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes=True
+00:01.406  image.write      | ERROR OpenImageIO write failed: Could not open file "\.thumbnails\large\blender_7424_52c3cd4280e922043ab69fcc6fdaae71.png.png"
+00:07.218  render           | Saved: 'D:\SPT Dev\K2-Project\Assets-Local\K2C3\Work\K2C3-side.png'
+Info: No new files have been packed
+Info: Saved as "K2C3-components-v002.blend"
+COMPONENTS_READY 212 12732 [7.429502487182617, 0.46756815910339355, 1.716088056564331]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
