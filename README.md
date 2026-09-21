@@ -143,15 +143,16 @@ Sketchfab 모델 페이지, 3년 전 댓글. **"게임 모드 제작에 써도 �
 | **K2 · K2C3 · K2C4 모델 구조 분석** | ✅ 완료 |
 | 라이선스 위험 해소 (Release 삭제 결정) | ✅ 완료 — 실제 삭제 완료 |
 | 블렌더 부품 분리·묶기 (**K2C3만**) | 🟡 v012까지 진행 — 212개 조각 분리, 임시 리깅(본 5개), HK416 재장전 클립 리타기팅 프리뷰. 미분류 부품 16개 남음. **K2·K2C4는 아직 시작 전** |
-| Unity 프리팹·번들 | 🟡 `k2c3_visual.bundle` 정적 외형만 빌드 성공(가동부 없음). 부착 지점(mod_*)·손 IK·콜라이더 있는 진짜 게임용 프리팹은 아직 없음 |
-| 서버 모드 — K2C3 시험용 무기 1개 | ✅ 서버 등록/API 검증 통과, SPT 4.1.6에 설치 완료. 인게임 화면 확인은 아직 형이 직접 해야 함 |
-| 서버 모드 — 부품 갈아끼우기(K2/K2C4 슬롯 시스템) | 🟡 `Server/Generate-Family-Data.ps1` + `K2Mod.cs` 확장으로 코드 작성 완료. **로컬 PC에서 스크립트 실행 + `dotnet build` + `Verify-Server.ps1` 검증 필요** (이 세션에는 게임 DB가 없어서 컴파일 검증 못 함) |
-| 클라 모드(외형 스왑) | ✅ 시험판 존재, HK416 메시를 K2C3 외형으로 덮어씌우는 방식(부품 교체 시 겉모습은 아직 그대로) |
+| Unity 프리팹·번들 | 🟡 `k2c3_visual.bundle` 정적 외형 빌드 성공, **인게임 확인 결과 크기가 비정상(너무 큼)·부품이 뭉쳐 보이는 버그 발견** (아래 "다음 작업 배정" 참고). 부착 지점(mod_*)·손 IK·콜라이더 있는 진짜 게임용 프리팹도 아직 없음 |
+| 서버 모드 — K2C3 시험용 무기 1개 | ✅ 서버 등록/API 검증 통과, SPT 4.1.6에 설치, **인게임 확인 완료**(피스키퍼 판매·외형 스왑 작동 확인) |
+| 서버 모드 — 부품 갈아끼우기(K2/K2C4 슬롯 시스템) | 🟡 `Server/Generate-Family-Data.ps1` + `K2Mod.cs` 확장 코드 작성 완료, **`dotnet build` 실제 성공(경고 0, 오류 0)까지 검증**. 로컬 PC에서 스크립트 실행 + `Verify-Server.ps1` 검증만 남음 |
+| 클라 모드(외형 스왑) | ✅ 시험판 존재 + **로컬 `dotnet build` 성공, 인게임 작동 확인**(HK416 메시를 K2C3 외형으로 덮어씌우는 방식, 부품 교체 시 겉모습은 아직 그대로) |
+| 빌드 인프라 (`.csproj`/`.sln`) | ✅ `Server/Client`의 `.csproj`가 실제로 존재하지 않던 것을 발견해 복원, `K2-Project.sln` 신규 생성, Release 빌드 시 SPT 폴더로 자동 배포(SAIN 방식), 사람마다 다른 설치 경로는 `LocalSettings.props`로 한 번만 설정 |
 
 ### 다음 작업 배정
 
 - **C33님 (최우선, 2026-09-21 실전 테스트로 발견)**: 인게임에서 K2C3 외형이 **너무 크고 부품이 뭉쳐 보이는 버그** 확인됨. `Blender/export_visual.py`가 참조하는 `K2C3_DraftRig`/`K2C3_DonorFitRig`에 465mm 실척 보정(v006에서 찾은 scale≈0.126)이 안 걸려있는 것으로 보임 — 자세한 진단은 `Docs/AI-Knowledge/NOTES.md` 8절 참고. 그다음 K2C3 블렌더 정리 마무리(미분류 16개, 가동부 확정) + **K2 원본/K2C4 단축형도 K2C3처럼 부품 분리·정리 시작** + Unity에서 부착 지점(mod_*)·손 IK·탄피배출구 있는 실제 게임용 프리팹 완성.
-- **R_F(형)**: ✅ K2C3 시험용 무기 인게임 확인 완료(피스키퍼 판매/외형 스왑 작동 확인, 크기 버그는 위 항목). 남은 것: 로컬 PC에서 `Server/Generate-Family-Data.ps1` 실행 → `dotnet build` → `Verify-Server.ps1`로 K2/K2C4 부품 갈아끼우기 데이터 검증.
+- **R_F님**: ✅ K2C3 시험용 무기 인게임 확인 완료(피스키퍼 판매/외형 스왑 작동 확인, 크기 버그는 위 항목). ✅ `Server`/`Client` `.csproj` 복원 + 로컬 빌드 성공까지 완료. 남은 것: 로컬 PC에서 `Server/Generate-Family-Data.ps1` 실행 → `dotnet build` → `Verify-Server.ps1`로 K2/K2C4 부품 갈아끼우기 데이터 검증.
 
 ---
 
@@ -283,19 +284,27 @@ README.md                이 문서
 INSTALL_KO.md            서버 시험판 설치 안내
 VISUAL_TEST_KO.md         외형 시험(클라 플러그인) 설치·확인 안내
 K2-Project.sln            Visual Studio/Rider용 솔루션(Server+Client 프로젝트)
+LocalSettings.props.example  실제 SPT 설치 경로 설정 예시 — 복사해서
+                              LocalSettings.props로 저장하고 본인 경로로 수정
+                              (사람마다 다르므로 이 파일 자체는 git에 안 올라감)
 Build-Release.ps1          Build-Visual.ps1 + Package-Visual.ps1을 순서대로 실행
 Build-Visual.ps1           Unity 번들 + 클라/서버 dotnet build
-Package-Visual.ps1         빌드 결과를 03_Releases/ 배포 ZIP으로 묶음
+Package-Visual.ps1         빌드 결과를 03_Releases/ 배포 ZIP으로 묶음(공유용)
+                            — .sln으로 Release 빌드하면 이거 없이도 SPT 폴더로
+                            자동 배포됨(csproj의 DeployToSpt 타겟, SAIN 방식)
 Verify-Server.ps1          실행 중인 로컬 서버 API로 실제 등록 상태 검증
-NuGet.Config                (로컬 PC에서 패키지 소스 설정 — 이 저장소엔 비어 있음)
+NuGet.Config                nuget.org 명시 지정(SPTushonka.* 패키지가 실제로
+                             여기서 받아지는 것을 dotnet build로 확인함)
 
-Server/                   서버 모드 (C#, SPTarkov.Server.*)
+Server/                   서버 모드 (C#, SPTarkov.Server.*, net10.0)
+  K2.Server.csproj           프로젝트 파일 (2026-09-21 복원 — 아래 "빌드" 참고)
   K2Mod.cs                  아이템/프리셋/상점 등록. Server/data/*.json을 읽음
   Generate-Data.ps1          K2C3 시험용 무기 데이터 생성(로컬 SPT DB 필요)
   Generate-Family-Data.ps1   K2/K2C4 부품 갈아끼우기 데이터 생성(로컬 SPT DB 필요)
   data/                       위 두 스크립트가 만드는 JSON (weapon/preset/assort/family_*)
 
-Client/                   클라 BepInEx 플러그인 (K2.Visual)
+Client/                   클라 BepInEx 플러그인 (K2.Visual, netstandard2.1)
+  K2.Visual.csproj            프로젝트 파일 (2026-09-21 복원)
   VisualPlugin.cs             Harmony로 무기 생성 시점을 패치해 외형 번들을 덮어씌움
 
 Unity/                    외형 번들 빌드용 Unity 프로젝트 (Unity 2022.3.43f1)
