@@ -59,6 +59,13 @@
       <HintPath>$(Managed)\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <!-- 2026-09-21: 실제 빌드에서 CS0012(MonoBehaviour가 참조 안 된 어셈블리
+         'UnityEngine, Version=0.0.0.0'에 있다)로 확인됨 — CoreModule만으로는
+         부족했고, 이 페이사드(facade) 어셈블리를 따로 참조해야 한다. -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(Managed)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(Managed)\UnityEngine.CoreModule.dll</HintPath>
       <Private>false</Private>
