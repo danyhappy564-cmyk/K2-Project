@@ -76,6 +76,10 @@ $RECYCLE.BIN/
 .idea/
 *.workspace
 
+# 사람마다 다른 로컬 SPT 설치 경로 — LocalSettings.props.example을 복사해서
+# 만든다(README/csproj 주석 참고). 커밋하면 안 됨(경로가 사람마다 다름).
+LocalSettings.props
+
 # ==========================================
 # 4. 빌드 스크립트 산출물 (선택 사항)
 # ==========================================

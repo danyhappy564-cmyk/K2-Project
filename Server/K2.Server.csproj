@@ -34,8 +34,11 @@
 
   <!-- 2026-09-21: Release로 빌드할 때마다 SPT 설치 폴더로 바로 배포한다
        (SAIN 등 다른 모드들이 쓰는 방식 — 매번 수동으로 파일 복사/스크립트
-       실행 안 해도 됨). 기본 경로는 PROJECT-RULES.md 1-1절 표준값이고,
-       실제 경로가 다르면 SPT_ROOT 환경변수로 덮어쓴다: set SPT_ROOT=... -->
+       실행 안 해도 됨). 경로 우선순위는 Client/K2.Visual.csproj와 동일:
+       LocalSettings.props(사람마다 다른 실제 경로, 저장소 루트에 한 번만
+       만들어두면 됨) > SPT_ROOT 환경변수 > 기본값(PROJECT-RULES.md 1-1절). -->
+  <Import Project="$(MSBuildThisFileDirectory)..\LocalSettings.props" Condition="Exists('$(MSBuildThisFileDirectory)..\LocalSettings.props')" />
+
   <PropertyGroup>
     <SptRoot Condition="'$(SptRoot)' == '' And '$(SPT_ROOT)' != ''">$(SPT_ROOT)</SptRoot>
     <SptRoot Condition="'$(SptRoot)' == ''">E:\SPT 4.1</SptRoot>

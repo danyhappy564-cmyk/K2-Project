@@ -5,10 +5,14 @@
     표준 클라 플러그인 템플릿을 따른다(2026-09-21 복원 — 원본이 없었던
     이유는 K2.Server.csproj와 동일, Server/K2.Server.csproj 주석 참고).
 
-    SptRoot는 실제 SPT 설치 폴더를 가리켜야 한다. 기본값은 Cluade_For_spt의
-    docs/PROJECT-RULES.md 1-1절(계정 전체 표준 게임 설치 경로)을 따른다 —
-    로컬 환경이 다르면 환경변수 SPT_ROOT로 덮어쓴다:
-      $ set SPT_ROOT=<실제 설치 경로>
+    SptRoot는 실제 SPT 설치 폴더를 가리켜야 한다. 사람마다(R_F님/C33님)
+    설치 경로가 다르므로, 우선순위는:
+      1. 저장소 루트의 LocalSettings.props (있으면) — 처음 한 번만
+         LocalSettings.props.example을 복사해서 본인 경로를 적어두면,
+         그다음부터는 .sln을 Visual Studio/Rider로 열고 그냥 빌드만
+         하면 된다(터미널에서 매번 환경변수 설정 안 해도 됨).
+      2. 환경변수 SPT_ROOT (LocalSettings.props가 없을 때)
+      3. 기본값 E:\SPT 4.1 (PROJECT-RULES.md 1-1절)
   -->
 
   <PropertyGroup>
@@ -19,6 +23,8 @@
     <LangVersion>latest</LangVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\LocalSettings.props" Condition="Exists('$(MSBuildThisFileDirectory)..\LocalSettings.props')" />
 
   <PropertyGroup>
     <SptRoot Condition="'$(SptRoot)' == '' And '$(SPT_ROOT)' != ''">$(SPT_ROOT)</SptRoot>

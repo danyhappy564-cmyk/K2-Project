@@ -1,0 +1,15 @@
+<Project>
+  <!--
+    사용법: 이 파일을 "LocalSettings.props"로 복사(이름에서 ".example" 빼기)한
+    다음, 아래 SptRoot를 본인 컴퓨터의 실제 SPT 설치 경로로 바꾸세요.
+
+    LocalSettings.props는 .gitignore에 걸려 있어서 git에 올라가지 않습니다 —
+    사람마다(R_F님/C33님) 설치 경로가 다르기 때문입니다. 한 번만 만들어두면
+    그 다음부터는 환경변수(SPT_ROOT)를 매번 설정하지 않아도, Visual Studio나
+    Rider에서 K2-Project.sln을 열고 그냥 빌드(Release)하면 됩니다 —
+    Client/Server 두 프로젝트 모두 이 파일이 있으면 자동으로 읽습니다.
+  -->
+  <PropertyGroup>
+    <SptRoot>E:\SPT 4.1</SptRoot>
+  </PropertyGroup>
+</Project>
