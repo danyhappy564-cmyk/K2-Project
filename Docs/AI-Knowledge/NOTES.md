@@ -97,6 +97,34 @@ ID를 추가해야 한다. `mod_stock`은 무기 루트에 바로 있으니 거�
 - `Unity/현재상태.md` — Unity/클라 빌드·게임 설치 진행
 - `Blender/작업현황.md` — 블렌더 버전별(v001~v012) 진행
 
+### 7-bis. `.csproj` 두 개 복원 완료 + 서버는 실제로 `dotnet build` 통과 확인 (2026-09-21)
+
+R_F님 로컬 PC에서 `Server/K2.Server.csproj`·`Client/K2.Visual.csproj`가
+**실제로 존재하지 않는다**는 게 리포트로 확인됐다(단순히 git에 안 올라간 게
+아니라 파일 자체가 없었음). `docs/kb/00-environment.md`·`05-project-structure.md`
+의 검증된 템플릿을 그대로 따라 이 클라우드 세션에서 두 파일을 새로 작성했고,
+`.NET 10 SDK`를 설치해서 실제로 검증했다:
+
+- **`Server/K2.Server.csproj`: `dotnet build` 완전히 성공(경고 0, 오류 0)**,
+  `SPTushonka.Common`/`SPTushonka.DI`/`SPTushonka.Reflection`/
+  `SPTushonka.Server.Core` 전부 `Version="4.1.*"`로 nuget.org에서 정상
+  restore됨. `K2Mod.cs`(부품 갈아끼우기 확장분 포함)도 이 빌드에 전부
+  포함돼 실제로 컴파일 검증됐다 — 앞 절들에서 "추측"이라고 적어둔 MongoId
+  비교, `Preset`/`TraderAssort` 프로퍼티 접근, 슬롯/필터 구조 전부 이
+  빌드로 실제 확인이 끝난 상태다.
+- `NuGet.Config`가 `<clear/>`만 있고 소스가 하나도 없었던 것도 원인 —
+  `nuget.org`를 명시로 다시 추가해서 고쳤다(패키지가 실제로 nuget.org
+  공개 피드에 있다는 것 자체가 이번에 처음 확인됨).
+- **`Client/K2.Visual.csproj`는 의도한 지점에서 정확히 멈춤**: `SptRoot`
+  (기본값 `E:\SPT 4.1` — Cluade_For_spt `docs/PROJECT-RULES.md` 1-1절 계정
+  표준 경로, `SPT_ROOT` 환경변수로 덮어쓰기 가능) 아래
+  `EscapeFromTarkov_Data\Managed`가 없다는 에러로 빌드 실패 — 이 클라우드
+  세션엔 실제 게임 폴더가 없으니 당연한 결과고, `VisualPlugin.cs` 자체의
+  타입체크는 아직 안 끝난 상태다. **로컬 PC(F:\SP-Tushunka 또는 실제 설치
+  경로)에서 마무리 빌드가 필요하다.** `Managed` 폴더의 `UnityEngine.*Module.dll`
+  분할이 실제 설치와 다르면(Unity 버전차) 참조 목록을 그에 맞게 고칠 것 —
+  csproj 안에 관련 주석을 남겨뒀다.
+
 ### 7. 블렌더 작업은 지금까지 K2C3에만 했다
 `Blender/작업현황.md`의 모든 항목(v001~v012)은 **K2C3만** 대상이다. K2(원본)와
 K2C4(단축형)는 아직 glTF 구조 분석(README의 "모델 분석 결과" 표)만 끝났고,

@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Cluade_For_spt의 docs/kb/02-client-porting.md·05-project-structure.md
+    표준 클라 플러그인 템플릿을 따른다(2026-09-21 복원 — 원본이 없었던
+    이유는 K2.Server.csproj와 동일, Server/K2.Server.csproj 주석 참고).
+
+    SptRoot는 실제 SPT 설치 폴더를 가리켜야 한다. 기본값은 Cluade_For_spt의
+    docs/PROJECT-RULES.md 1-1절(계정 전체 표준 게임 설치 경로)을 따른다 —
+    로컬 환경이 다르면 환경변수 SPT_ROOT로 덮어쓴다:
+      $ set SPT_ROOT=<실제 설치 경로>
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>K2Project.Visual</RootNamespace>
+    <AssemblyName>K2.Visual</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SptRoot Condition="'$(SptRoot)' == '' And '$(SPT_ROOT)' != ''">$(SPT_ROOT)</SptRoot>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\SPT 4.1</SptRoot>
+    <Managed>$(SptRoot)\EscapeFromTarkov_Data\Managed</Managed>
+    <BepInExCore>$(SptRoot)\BepInEx\core</BepInExCore>
+    <SptPlugins>$(SptRoot)\BepInEx\plugins\spt</SptPlugins>
+  </PropertyGroup>
+
+  <Target Name="ValidateSptRoot" BeforeTargets="BeforeBuild;ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(Managed)')"
+           Text="SptRoot '$(SptRoot)' 아래에 EscapeFromTarkov_Data\Managed가 없습니다. SPT_ROOT 환경변수나 -p:SptRoot=... 로 실제 SPT 설치 경로를 지정하세요." />
+  </Target>
+
+  <!-- 런처는 spt-reflection.dll의 어셈블리 버전으로 "이 플러그인이 몇 버전용인지"
+       판정한다(docs/kb/02-client-porting.md 2.1절). 깡통(버전 1.0.0.0)에
+       대고 빌드하면 런처가 그 플러그인을 거부하므로, 빌드 시점에 미리 막는다. -->
+  <Target Name="EnsureRealSptReflection" AfterTargets="ValidateSptRoot"
+          BeforeTargets="BeforeBuild;ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(SptPlugins)\spt-reflection.dll')"
+           Text="$(SptPlugins)\spt-reflection.dll 이 없습니다. SptRoot가 실제 SPT 설치를 가리키는지 확인하세요." />
+    <GetAssemblyIdentity AssemblyFiles="$(SptPlugins)\spt-reflection.dll"
+                         Condition="Exists('$(SptPlugins)\spt-reflection.dll')">
+      <Output TaskParameter="Assemblies" ItemName="_SptReflectionIdentity" />
+    </GetAssemblyIdentity>
+    <Error Condition="'%(_SptReflectionIdentity.Version)' == '1.0.0.0'"
+           Text="SptRoot '$(SptRoot)' 아래의 spt-reflection.dll이 버전 1.0.0.0(깡통/placeholder)입니다. 이 상태로 빌드한 플러그인은 SPT 런처가 거부합니다. 실제 SPT 설치를 가리키도록 SptRoot를 다시 지정하세요." />
+  </Target>
+
+  <ItemGroup>
+    <!-- 이 항목들은 NuGet 패키지가 아니라 로컬에 설치된 실제 게임/BepInEx
+         DLL을 직접 참조한다(HintPath) — SPTushonka.* 와 달리 공개 배포되는
+         패키지가 아니기 때문이다. Managed 폴더의 UnityEngine.*Module.dll
+         분할은 Unity 버전마다 다를 수 있다 — 빌드 시 "파일을 찾을 수
+         없습니다" 에러가 나는 항목은 실제 폴더 목록을 보고 이름을
+         맞추거나 지운다(EscapeFromTarkov_Data\Managed 폴더를 직접 확인). -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(Managed)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(Managed)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(Managed)\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCore)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCore)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

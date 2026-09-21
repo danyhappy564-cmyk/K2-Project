@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Cluade_For_spt의 docs/kb/00-environment.md·05-project-structure.md에서
+    가져온, 다른 프로젝트에서 실제로 dotnet build/restore까지 검증된 표준
+    구성이다(2026-09-21). 이 저장소에는 원래 K2.Server.csproj가 없었다 —
+    .gitignore의 "*.csproj"가 Unity 자동생성분과 이 손으로 쓴 파일을 같이
+    무시해서 한 번도 git에 커밋된 적이 없었고, 로컬 PC에도 실제로 없었다
+    (2026-09-21 사용자 리포트로 확인). 이 파일이 그 복원본이다.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>K2Project</RootNamespace>
+    <AssemblyName>K2.Server</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 패키지 이름은 SPTushonka.* 인데 어셈블리/네임스페이스는 여전히
+         SPTarkov.* 다(docs/kb/00-environment.md). 정확한 패치 버전을 모를 때는
+         "4.1.*"처럼 마이너 floating을 쓰는 게 4.1.5로 고정하는 것보다 안전하다
+         — 이 프로젝트는 4.1.6을 대상으로 하므로(README 참고) 4.1 안에서
+         자동으로 최신을 받는다. 만약 이 버전으로 복원이 안 되면
+         Cluade_For_spt/docs/kb/00-environment.md의 예시(4.1.5 고정)로
+         낮춰서 시도할 것. -->
+    <PackageReference Include="SPTushonka.Common" Version="4.1.*" />
+    <PackageReference Include="SPTushonka.DI" Version="4.1.*" />
+    <PackageReference Include="SPTushonka.Reflection" Version="4.1.*" />
+    <PackageReference Include="SPTushonka.Server.Core" Version="4.1.*" />
+  </ItemGroup>
+
+</Project>
