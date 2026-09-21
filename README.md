@@ -134,17 +134,24 @@ Sketchfab 모델 페이지, 3년 전 댓글. **"게임 모드 제작에 써도 �
 
 ---
 
-## 현재 상태
+## 현재 상태 (2026-09-21 갱신)
 
 | 단계 | 상태 |
 |---|---|
 | 모델 확보 (K2 / K2C3 / K2C4, FBX·glTF) | ✅ |
 | 라이선스 확인 (3종 전부) | ✅ 셋 다 다름 — 위 표 참조 |
 | **K2 · K2C3 · K2C4 모델 구조 분석** | ✅ 완료 |
-| 라이선스 위험 해소 (Release 삭제 결정) | ✅ 결정됨 — ⬜ **실제 삭제는 GitHub 웹에서 수동** |
-| 블렌더 부품 분리·묶기 | ⬜ |
-| Unity 프리팹·번들 | ⬜ |
-| 서버 모드 (템플릿·슬롯·로케일·상인) | ⬜ |
+| 라이선스 위험 해소 (Release 삭제 결정) | ✅ 완료 — 실제 삭제 완료 |
+| 블렌더 부품 분리·묶기 (**K2C3만**) | 🟡 v012까지 진행 — 212개 조각 분리, 임시 리깅(본 5개), HK416 재장전 클립 리타기팅 프리뷰. 미분류 부품 16개 남음. **K2·K2C4는 아직 시작 전** |
+| Unity 프리팹·번들 | 🟡 `k2c3_visual.bundle` 정적 외형만 빌드 성공(가동부 없음). 부착 지점(mod_*)·손 IK·콜라이더 있는 진짜 게임용 프리팹은 아직 없음 |
+| 서버 모드 — K2C3 시험용 무기 1개 | ✅ 서버 등록/API 검증 통과, SPT 4.1.6에 설치 완료. 인게임 화면 확인은 아직 형이 직접 해야 함 |
+| 서버 모드 — 부품 갈아끼우기(K2/K2C4 슬롯 시스템) | 🟡 `Server/Generate-Family-Data.ps1` + `K2Mod.cs` 확장으로 코드 작성 완료. **로컬 PC에서 스크립트 실행 + `dotnet build` + `Verify-Server.ps1` 검증 필요** (이 세션에는 게임 DB가 없어서 컴파일 검증 못 함) |
+| 클라 모드(외형 스왑) | ✅ 시험판 존재, HK416 메시를 K2C3 외형으로 덮어씌우는 방식(부품 교체 시 겉모습은 아직 그대로) |
+
+### 다음 작업 배정
+
+- **C33님**: K2C3 블렌더 정리 마무리(미분류 16개, 가동부 확정) + **K2 원본/K2C4 단축형도 K2C3처럼 부품 분리·정리 시작** (지금까지 블렌더 작업은 K2C3만 진행됨) + Unity에서 부착 지점(mod_*)·손 IK·탄피배출구 있는 실제 게임용 프리팹 완성.
+- **R_F(형)**: 로컬 PC(Windows, SPT 설치된 곳)에서 `Server/Generate-Family-Data.ps1` 실행 → `dotnet build` → `Verify-Server.ps1`로 K2/K2C4 부품 갈아끼우기 데이터 검증 → 실제 게임에서 K2C3 시험용 무기 장착 화면 확인.
 
 ---
 
@@ -215,7 +222,7 @@ K2 의 핸드가드는 레일 이빨 없는 통짜 플라스틱이라 애초에 
 개머리판(560+114 tri, 두 조각)이 **분리 방식 자체가 다르다**는 것도 확인했습니다 —
 Unity 리깅 때 서로 다른 접힘/신축 로직이 필요합니다.
 
-자세한 근거와 방법론은 [`k2 project/K2-WEAPON-MOD-PROJECT.md`](k2%20project/K2-WEAPON-MOD-PROJECT.md) 참조.
+자세한 근거와 방법론은 [`Docs/K2-WEAPON-MOD-PROJECT.md`](Docs/K2-WEAPON-MOD-PROJECT.md) 참조.
 
 ---
 
@@ -269,15 +276,45 @@ Unity 리깅 때 서로 다른 접힘/신축 로직이 필요합니다.
 
 ---
 
-## 저장소 구조
+## 저장소 구조 (2026-09-21 정리)
 
 ```
-README.md                                  이 문서
-k2 project/
-  K2-WEAPON-MOD-PROJECT.md                 기획·인수인계 문서 (분석 전문)
-  모델링크 및 정보.md                        원본 링크 / 제작진 / 진행도 기록
+README.md                이 문서
+INSTALL_KO.md            서버 시험판 설치 안내
+VISUAL_TEST_KO.md         외형 시험(클라 플러그인) 설치·확인 안내
+K2-Project.sln            Visual Studio/Rider용 솔루션(Server+Client 프로젝트)
+Build-Release.ps1          Build-Visual.ps1 + Package-Visual.ps1을 순서대로 실행
+Build-Visual.ps1           Unity 번들 + 클라/서버 dotnet build
+Package-Visual.ps1         빌드 결과를 03_Releases/ 배포 ZIP으로 묶음
+Verify-Server.ps1          실행 중인 로컬 서버 API로 실제 등록 상태 검증
+NuGet.Config                (로컬 PC에서 패키지 소스 설정 — 이 저장소엔 비어 있음)
+
+Server/                   서버 모드 (C#, SPTarkov.Server.*)
+  K2Mod.cs                  아이템/프리셋/상점 등록. Server/data/*.json을 읽음
+  Generate-Data.ps1          K2C3 시험용 무기 데이터 생성(로컬 SPT DB 필요)
+  Generate-Family-Data.ps1   K2/K2C4 부품 갈아끼우기 데이터 생성(로컬 SPT DB 필요)
+  data/                       위 두 스크립트가 만드는 JSON (weapon/preset/assort/family_*)
+
+Client/                   클라 BepInEx 플러그인 (K2.Visual)
+  VisualPlugin.cs             Harmony로 무기 생성 시점을 패치해 외형 번들을 덮어씌움
+
+Unity/                    외형 번들 빌드용 Unity 프로젝트 (Unity 2022.3.43f1)
+  Assets/Editor/BuildK2Visual.cs   번들 빌드 에디터 스크립트
+
+Blender/                  블렌더 작업 스크립트 (MCP로 실행) + 작업현황.md
+Assets-Local/             블렌더 작업 파일(.blend)·원본 glTF 등 (무거움, 이 컴퓨터 로컬 전용)
+Artifacts/                빌드 로그·번들 산출물
+UnityBuildCheck/          Unity DLL 대상 별도 컴파일 검사용 (Unity/처럼 자동 생성, 커밋 안 함)
+
+Docs/                     기획·참고 문서 (예전 이름 "k2 project/", 2026-09-21에 정리)
+  K2-WEAPON-MOD-PROJECT.md   기획·인수인계 문서 (분석 전문)
+  모델링크 및 정보.md          원본 링크 / 제작진 / 진행도 기록
   로드맵.png  로드맵 1.png  로드맵 2.png      분석 결과 요약 이미지
   모델 사진/  K2.png  K2C3.png  K2C4.png     변형별 외형
+  모델 원본 데이터/            분석에 쓴 가벼운 원본(scene.gltf·license.txt)
+  AI-Knowledge/               Claude·c33님의 Codex(GPT)가 공유하는 이 프로젝트 전용
+                              지식 메모(NOTES.md) — 중앙 KB(Cluade_For_spt)는 R_F 전용이라
+                              Codex가 못 보므로, 이 저장소 안에 둬서 둘 다 읽게 함
 ```
 
 ### 원본 에셋 (Release) — 분석 완료로 회수 예정
@@ -296,7 +333,7 @@ FBX 원본은 **103MB** 라 git 에 커밋할 수 없어 Release 로 올렸습�
 남지 않고 그냥 없어집니다** — 지금 이 레포엔 K2 원본이 독립 파일로 존재하지 않습니다.
 
 - 분석에 실제로 쓴 가벼운 파일(`scene.gltf` · `license.txt`, 6개 합쳐 48KB)은 삭제
-  전에 git 본체의 [`k2 project/모델 원본 데이터/`](k2%20project/모델%20원본%20데이터/)
+  전에 git 본체의 [`Docs/모델 원본 데이터/`](Docs/모델%20원본%20데이터/)
   에 커밋해서 남겨뒀습니다 — 법적 근거 원본과 부품 지도 재계산용 설계도는 계속
   보관됩니다. `.bin`(정점 데이터)·텍스처·FBX 는 git 에 없고 팀원 로컬에만 있습니다
 - **새로 원본이나 큰 산출물을 공유해야 하면**: 팀 내부 협업(형·C33)이 목적이면 Release
@@ -317,7 +354,7 @@ Release 와 달리 지워도 안 없어집니다. 앞으로 나올 빌드된 Ass
 
 공동작업 프로젝트입니다. 작업하기 전에 아래만 지켜주세요.
 
-1. **작업 진행은 `k2 project/모델링크 및 정보.md` 의 `<제작진행도>` 에 한 줄씩 기록**
+1. **작업 진행은 `Docs/모델링크 및 정보.md` 의 `<제작진행도>` 에 한 줄씩 기록**
    (날짜 / 작업자 / 무엇을 했는지)
 2. **큰 바이너리는 커밋 금지** → Release 에 올리고 README 표에 추가
 3. **문서는 한국어**로 작성

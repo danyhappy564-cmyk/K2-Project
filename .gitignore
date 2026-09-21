@@ -14,11 +14,31 @@ Unity/Build/
 Unity/Builds/
 Unity/MemoryCaptures/
 Unity/Recordings/
+# 2026-09-21 추가: Library/(에디터가 매번 다시 만드는 캐시)·Logs/가 여기 빠져
+# 있어서 실제로 git에 수백 개 셰이더 캐시/DLL이 그대로 커밋돼 있었다(중구난방
+# 원인 중 하나). 이제부터는 무시하고, 이미 커밋된 것은 별도로 untrack한다.
+Unity/Library/
+Unity/Logs/
+Unity/Temp/
+Unity/obj/
+
+# .NET 빌드 산출물(Server/Client/UnityBuildCheck 공통) — 소스가 아니라 빌드할 때마다
+# 새로 생기는 것들. 2026-09-21 이전엔 이 규칙이 없어서 obj/ 안의 nuget 캐시가
+# 커밋돼 있었다.
+bin/
+obj/
 
 # 유니티가 자동 생성하는 Visual Studio / C# 솔루션 및 프로젝트 파일
-*.csproj
+# 주의(2026-09-21): 예전에 여기 "*.csproj"가 전체 저장소에 걸려 있었는데,
+# Unity가 자동 생성하는 것뿐 아니라 Server/Client 밑의 손으로 작성한
+# K2.Server.csproj / K2.Visual.csproj까지 같이 무시돼서 git에 한 번도
+# 커밋되지 않은 채로 누락돼 있었다. Unity/UnityBuildCheck 폴더로 범위를
+# 좁혀서 이 문제를 고쳤다 — Server/Client의 .csproj는 이제 커밋 대상이다.
+Unity/*.csproj
+Unity/*.sln
+UnityBuildCheck/*.csproj
+UnityBuildCheck/*.sln
 *.unityproj
-*.sln
 *.suo
 *.user
 *.userprefs
