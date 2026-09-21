@@ -125,6 +125,52 @@ R_F님 로컬 PC에서 `Server/K2.Server.csproj`·`Client/K2.Visual.csproj`가
   분할이 실제 설치와 다르면(Unity 버전차) 참조 목록을 그에 맞게 고칠 것 —
   csproj 안에 관련 주석을 남겨뒀다.
 
+### 8. ⚠️ 실제 인게임 확인 결과 — K2C3 외형이 너무 크고 부품이 뭉쳐 보임 (2026-09-21, R_F님 실전 테스트)
+
+서버 등록·클라 외형 스왑 자체는 성공(피스키퍼 상점에 정상 노출, 검사창에서
+HK416이 아니라 실제 K2C3 메시로 교체된 것 확인됨) — 그런데 **모델이
+비정상적으로 크게 보이고 부품들이 한 덩어리로 뭉쳐 보임.**
+
+`Assets-Local/UnityInput/k2c3-visual.json`(실제 내보내기 결과)의 정점 좌표를
+직접 열어서 확인:
+```
+X: -17.7 ~ 7.9   (폭 25.6)
+Y: -4.7  ~ 13.8  (폭 18.5)
+Z: -4.7  ~ 2.4   (폭 7.0)
+```
+무기 하나 치고 너무 크고(465mm≈0.465유닛 기대), 원점(0,0,0)에서도 한참
+떨어져 있음(오프셋).
+
+**원인으로 보이는 지점** — `Blender/export_visual.py`:
+```python
+rig = source.objects['K2C3_DraftRig']
+fit = bpy.data.objects['K2C3_DonorFitRig']
+transform = Matrix.Diagonal((-1,1,1,1)) @ fit.matrix_basis @ rig.matrix_world.inverted()
+```
+- 이 조합 어디에도 v006(`Blender/작업현황.md` "2026-09-20 MCP 미터 보정 및
+  FBX 왕복 검사 — v006" 절)에서 찾은 465mm 실척 보정(barrel 기준
+  scale≈0.1260095657)이 들어가 있지 않다 — v006의 보정은 그 실험 파일
+  (`K2C3-metric-draft-v006.blend`)에만 있었고, 실제 내보내기가 참조하는
+  `K2C3_DraftRig`/`K2C3_DonorFitRig`(v012 계열 리그)에는 반영된 적이 없어
+  보임.
+- `fit.matrix_basis`는 **부모 기준 로컬 변환**이다 — `K2C3_DonorFitRig`에
+  부모가 있다면 의도(월드 기준 정렬)와 다른 값일 수 있다. `fit.matrix_world`
+  로 바꿔야 하는지 확인 필요.
+
+**다음 사람(c33님)이 확인할 것:**
+1. Blender MCP로 v012 씬을 열어서 `K2C3_DraftRig`/`K2C3_DonorFitRig`의
+   Scale 값이 실제로 얼마인지 확인 (1.0 근처면 실척 보정이 안 걸려있다는 뜻).
+2. `K2C3_DonorFitRig`에 부모 오브젝트가 있는지 확인 — 있으면
+   `matrix_basis` 대신 `matrix_world`(또는 필요한 조합)로 바꿔야 할 가능성.
+3. 고친 뒤에는 `export_visual.py` 안에 **내보내기 직후 바운딩 박스 크기를
+   출력하는 디버그 라인**을 추가해서, 재실행 전에 숫자로(약 0.9~1.0유닛
+   범위인지) 먼저 확인하고 나서 Unity 빌드로 넘어갈 것 — 매번 게임에
+   들어가서 눈으로 확인하는 것보다 훨씬 빠르다.
+4. "뭉쳐 보이는" 문제는 사이즈 문제와 별개로 남을 수 있음 — 크기 고치고도
+   해결 안 되면, `source.objects['K2C3_part_*']` 각 오브젝트의
+   `matrix_world` 자체가 v012 씬(도너 총 리그에 연결된 특정 프레임 포즈)의
+   영향을 받고 있는 게 아닌지 확인.
+
 ### 7. 블렌더 작업은 지금까지 K2C3에만 했다
 `Blender/작업현황.md`의 모든 항목(v001~v012)은 **K2C3만** 대상이다. K2(원본)와
 K2C4(단축형)는 아직 glTF 구조 분석(README의 "모델 분석 결과" 표)만 끝났고,

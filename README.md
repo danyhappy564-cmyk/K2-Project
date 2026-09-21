@@ -150,8 +150,8 @@ Sketchfab 모델 페이지, 3년 전 댓글. **"게임 모드 제작에 써도 �
 
 ### 다음 작업 배정
 
-- **C33님**: K2C3 블렌더 정리 마무리(미분류 16개, 가동부 확정) + **K2 원본/K2C4 단축형도 K2C3처럼 부품 분리·정리 시작** (지금까지 블렌더 작업은 K2C3만 진행됨) + Unity에서 부착 지점(mod_*)·손 IK·탄피배출구 있는 실제 게임용 프리팹 완성.
-- **R_F(형)**: 로컬 PC(Windows, SPT 설치된 곳)에서 `Server/Generate-Family-Data.ps1` 실행 → `dotnet build` → `Verify-Server.ps1`로 K2/K2C4 부품 갈아끼우기 데이터 검증 → 실제 게임에서 K2C3 시험용 무기 장착 화면 확인.
+- **C33님 (최우선, 2026-09-21 실전 테스트로 발견)**: 인게임에서 K2C3 외형이 **너무 크고 부품이 뭉쳐 보이는 버그** 확인됨. `Blender/export_visual.py`가 참조하는 `K2C3_DraftRig`/`K2C3_DonorFitRig`에 465mm 실척 보정(v006에서 찾은 scale≈0.126)이 안 걸려있는 것으로 보임 — 자세한 진단은 `Docs/AI-Knowledge/NOTES.md` 8절 참고. 그다음 K2C3 블렌더 정리 마무리(미분류 16개, 가동부 확정) + **K2 원본/K2C4 단축형도 K2C3처럼 부품 분리·정리 시작** + Unity에서 부착 지점(mod_*)·손 IK·탄피배출구 있는 실제 게임용 프리팹 완성.
+- **R_F(형)**: ✅ K2C3 시험용 무기 인게임 확인 완료(피스키퍼 판매/외형 스왑 작동 확인, 크기 버그는 위 항목). 남은 것: 로컬 PC에서 `Server/Generate-Family-Data.ps1` 실행 → `dotnet build` → `Verify-Server.ps1`로 K2/K2C4 부품 갈아끼우기 데이터 검증.
 
 ---
 
