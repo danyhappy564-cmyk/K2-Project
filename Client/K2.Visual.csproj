@@ -84,4 +84,21 @@
     </Reference>
   </ItemGroup>
 
+  <!-- 2026-09-21: Release로 빌드할 때마다 SPT 설치 폴더로 바로 배포한다
+       (SAIN 등 다른 모드들이 쓰는 방식) — 위에서 이미 정한 $(SptRoot)를
+       그대로 쓴다. 번들 파일이 아직 없으면(Unity 빌드 전) 조용히 건너뛴다. -->
+  <PropertyGroup>
+    <SptPluginDir>$(SptRoot)\BepInEx\plugins\K2-Project</SptPluginDir>
+    <K2VisualBundle>$(MSBuildProjectDirectory)\..\Artifacts\VisualBundle\k2c3_visual.bundle</K2VisualBundle>
+  </PropertyGroup>
+
+  <Target Name="DeployToSpt" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <MakeDir Directories="$(SptPluginDir)" Condition="!Exists('$(SptPluginDir)')" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SptPluginDir)" />
+    <Copy SourceFiles="$(K2VisualBundle)" DestinationFolder="$(SptPluginDir)" Condition="Exists('$(K2VisualBundle)')" />
+    <Warning Condition="!Exists('$(K2VisualBundle)')"
+             Text="[K2] $(K2VisualBundle) 이 없어서 번들은 복사 못 했습니다 — Build-Visual.ps1(Unity)로 먼저 만드세요. DLL은 배포했습니다." />
+    <Message Importance="high" Text="[K2] 클라 플러그인 배포 완료: $(SptPluginDir)" />
+  </Target>
+
 </Project>

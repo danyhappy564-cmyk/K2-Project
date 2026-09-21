@@ -32,4 +32,24 @@
     <PackageReference Include="SPTushonka.Server.Core" Version="4.1.*" />
   </ItemGroup>
 
+  <!-- 2026-09-21: Release로 빌드할 때마다 SPT 설치 폴더로 바로 배포한다
+       (SAIN 등 다른 모드들이 쓰는 방식 — 매번 수동으로 파일 복사/스크립트
+       실행 안 해도 됨). 기본 경로는 PROJECT-RULES.md 1-1절 표준값이고,
+       실제 경로가 다르면 SPT_ROOT 환경변수로 덮어쓴다: set SPT_ROOT=... -->
+  <PropertyGroup>
+    <SptRoot Condition="'$(SptRoot)' == '' And '$(SPT_ROOT)' != ''">$(SPT_ROOT)</SptRoot>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\SPT 4.1</SptRoot>
+    <SptModDir>$(SptRoot)\SPT_Runtime\user\mods\K2-Project</SptModDir>
+  </PropertyGroup>
+
+  <Target Name="DeployToSpt" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <ItemGroup>
+      <K2DataFiles Include="$(MSBuildProjectDirectory)\data\**\*.*" />
+    </ItemGroup>
+    <MakeDir Directories="$(SptModDir)" Condition="!Exists('$(SptModDir)')" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SptModDir)" />
+    <Copy SourceFiles="@(K2DataFiles)" DestinationFolder="$(SptModDir)\data\%(RecursiveDir)" Condition="Exists('$(MSBuildProjectDirectory)\data')" />
+    <Message Importance="high" Text="[K2] 서버 모드 배포 완료: $(SptModDir)" />
+  </Target>
+
 </Project>
